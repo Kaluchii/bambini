@@ -38,7 +38,7 @@
                             </div>
                             <p class="title-1">{{$item->program_name_field}}</p>
                         </a>
-                        <div class="about-program">{{$item->preview_descr_field}}</div>
+                        <div class="about-program">{!! $item->preview_descr_field !!}</div>
                     </div>
                 @endforeach
             </div>
@@ -62,7 +62,7 @@
                 @foreach($about->features_group as $item)
                     <li class="feature"><img src="images/{{$item->feature_pict_image->secondary_link}}" alt="">
                         <div class="bold">{{$item->feature_name_field}}</div>
-                        <div class="text">{{$item->feature_descr_field}}</div>
+                        <div class="text">{!! $item->feature_descr_field !!}</div>
                         <?php $c++ ?>
                         @if($c == 4)
                             <p><a href="#">Педагоги бамбини</a></p>
