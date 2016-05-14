@@ -15,7 +15,7 @@
                             </div>
                             <p class="title-1">{{$item->program_name_field}}</p>
                         </a>
-                        <div class="about-program">{{$item->preview_descr_field}}</div>
+                        <div class="about-program">{!! $item->preview_descr_field !!}</div>
                     </div>
                 @endforeach
             </div>
@@ -28,7 +28,7 @@
                             </div>
                             <p class="title-2">{{$item->type_name_field}}</p>
                         </a>
-                        <div class="about-program">{{$item->type_descr_field}}</div>
+                        <div class="about-program">{!! $item->type_descr_field< !!}/div>
                         <ul class="program-link-block">
                             @foreach($item->upgrade_program_group as $field)
                                 <li class="item-links"><a href="/programs/{{$field->slug_field}}">{{$field->program_name_field}}</a> {{$field->program_name_descr_field}}</li>

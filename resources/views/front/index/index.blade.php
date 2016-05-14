@@ -1,6 +1,7 @@
 @extends('front.layout')
 <?php $title = 'Бамбини';
       $i = 0;
+      $j = 0;
       $c = 0?>
 @section('content')
     @include('front.index.menu')
@@ -31,14 +32,15 @@
             <h2 class="program-title" id="program">{{$programs->title_field}}</h2>
             <div class="block">
                 @foreach($programs->upgrade_programs_group as $item)
+                    <?php $j++ ?>
                     <div class="col-1-3">
                         <a href="/programs/{{$item->slug_field}}">
                             <div class="wrap">
                                 <img src="images/{{$item->upgrade_program_image->primary_link}}" alt="" class="program-title">
                             </div>
-                            <p class="title-1">{{$item->program_name_field}}</p>
+                            <p class={{"title-".$j}}>{{$item->program_name_field}}</p>
                         </a>
-                        <div class="about-program">{{$item->preview_descr_field}}</div>
+                        <div class="about-program">{!! $item->preview_descr_field !!}</div>
                     </div>
                 @endforeach
             </div>
@@ -51,7 +53,7 @@
                             </div>
                             <p class="title-2">{{$item->type_name_field}}</p>
                         </a>
-                        <div class="about-program">{{$item->type_descr_field}}</div>
+                        <div class="about-program">{!! $item->type_descr_field !!}</div>
                     </div>
                 @endforeach
             </div>
@@ -62,7 +64,7 @@
                 @foreach($about->features_group as $item)
                     <li class="feature"><img src="images/{{$item->feature_pict_image->secondary_link}}" alt="">
                         <div class="bold">{{$item->feature_name_field}}</div>
-                        <div class="text">{{$item->feature_descr_field}}</div>
+                        <div class="text">{!! $item->feature_descr_field !!}</div>
                         <?php $c++ ?>
                         @if($c == 4)
                             <p><a href="#">Педагоги бамбини</a></p>

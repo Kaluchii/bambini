@@ -35,7 +35,7 @@
         <div class="content-block">
             <div class="col-1-2">
                 <div class="text-block">
-                    {{$item->descr_field}}
+                    {!! $item->descr_field !!}
                 </div>
                 <div class="buttons-block">
                     <button class="ask">Задать вопрос</button>
