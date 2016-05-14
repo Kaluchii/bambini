@@ -1,0 +1,39 @@
+header.header {
+  padding: 35px 40px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  div.col-1-2 {
+    display: flex;
+    align-items: center;
+    &:first-child {
+      
+      img.logo {
+
+      }
+
+      p.text {
+        color: #666666;
+        padding-left: 20px;
+        padding-top: 10px;
+        font-size:14px;
+      }
+    }
+    &:last-child{
+      ul.head-menu {
+        display: flex;
+        padding-top: 15px;
+        li.item {
+          margin-left: 30px;
+          font-size: 18px;
+          a{
+            font-size:14px;
+            .link(@h-link,@h-bord,@h-hover,@h-bord-h);
+          }
+        }
+      }
+    }
+  }
+
+
+
+}

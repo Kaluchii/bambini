@@ -1,0 +1,38 @@
+.index + footer.footer{
+  margin-top: -150px;
+}
+
+footer.footer{
+  position: relative;
+  background: #efede7;
+  .social-block{
+    background: #ffffff;
+    width: 700px;
+    position: relative;
+    top:-45px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+    p{
+      padding-top: 40px;
+      color: #666666;
+      padding-bottom: 20px;
+    }
+  }
+  .wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: 0 auto;
+    .col-1-2{
+      p{
+        color: #666666;
+        position: relative;
+        top:-20px;
+        a{
+          .link(@h-link,@h-bord,@h-hover,@h-bord-h);
+        }
+      }
+    }
+  }
+}

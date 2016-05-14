@@ -145,6 +145,12 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
+		'Interpro\QuickStorage\QuickStorageServiceProvider',
+		'Interpro\ImageFileLogic\ImageFileLogicServiceProvider',
+		'Interpro\Fidback\FidbackServiceProvider',
+		'Intervention\Image\ImageServiceProvider',
+		'Interpro\Placeholder\PlaceholderServiceProvider',
+		'Interpro\AdminGenerator\AdminGeneratorServiceProvider',
 	],
 
 	/*
