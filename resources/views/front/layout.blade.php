@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>{{{$title or 'Бамбини'}}}</title>
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         @include('front.style')
         @yield('style')
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
