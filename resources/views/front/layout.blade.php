@@ -19,5 +19,13 @@
         </div>
         @include('front.scripts')
         @yield('scripts')
+        <div class="hide-block">
+            @include('front.popups.ask')
+            @include('front.popups.lesson')
+            @include('front.popups.thank')
+            @yield('ask')
+            @yield('lesson')
+            @yield('thank')
+        </div>
     </body>
 </html>

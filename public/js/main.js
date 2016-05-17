@@ -20,4 +20,16 @@ $(document).ready(function(){
         return false;
     });
 
+
+
+    $('.ask').magnificPopup({
+        type:'inline',
+        midClick: true
+    });
+    $('.lesson').magnificPopup({
+        type:'inline',
+        midClick: true
+    });
+
+
 });

@@ -94,6 +94,21 @@ return [
         ]
     ],
 
+// =====================================================================
+    'fidback' => [
+        'stringfields' => ['mail_rec','mail_username','site_name'],
+        'groups' => [
+            'lesson' =>[
+                'stringfields' => ['fio','email','phone','comment'],
+                'bools'        => ['mailed']
+            ],
+            'ask' =>[
+                'stringfields' => ['fio','email','question'],
+                'bools'        => ['mailed']
+            ]
+        ]
+    ]
+
 
 
 ];

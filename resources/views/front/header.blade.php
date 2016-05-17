@@ -7,7 +7,7 @@
         <div class="col-1-2">
             <ul class="head-menu">
                 <li class="item"><a href="{{$all_site->map_link_field}}">Карта проезда</a></li>
-                <li class="item"><a href="#">Задать вопрос</a></li>
+                <li class="item"><a class="ask" href="#ask">Задать вопрос</a></li>
                 <li class="item">{{$all_site->phone_field}}</li>
             </ul>
         </div>

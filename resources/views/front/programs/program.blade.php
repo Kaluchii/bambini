@@ -42,8 +42,8 @@ $i = 0?>
                     {!! $item->descr_field !!}
                 </div>
                 <div class="buttons-block">
-                    <button class="ask">Задать вопрос</button>
-                    <button class="join">Записаться на пробное занятие</button>
+                    <button  class="ask" href="#ask">Задать вопрос</button>
+                    <button  class="join lesson" href="#lesson">Записаться на пробное занятие</button>
                 </div>
             </div>
             <div class="col-1-2">
