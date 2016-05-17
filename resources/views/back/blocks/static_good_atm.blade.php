@@ -10,7 +10,7 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
-                Галерея (В доброй атмосфере)
+                Галерея (В доброй атмосфере)</label>
                 <ul class="group-block group_container" data-block="static_good_atm" data-group="good_atm_gallery"
                     data-owner-id="0">
                     @foreach($static_good_atm->good_atm_gallery_group as $item_good_atm_gallery )
@@ -20,7 +20,6 @@
                 <button class="any_create" data-block="static_good_atm" data-group="good_atm_gallery"
                         data-descr="Эл. первой группы" data-owner-id="0"> Добавить
                 </button>
-            </label>
         </div>
         <div class="field-wrap buttons">
             <button class="btn btn-primary pull-right any_save" data-block="static_good_atm" data-entity="block"
