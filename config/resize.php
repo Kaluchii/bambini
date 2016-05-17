@@ -34,10 +34,10 @@ return [
     ],
     'good_atm_gallery_atm_pict' => [
         'sizes' => [
-            ['width' => 800, 'height' => 800, 'sufix' => 'primary'],
-            ['width' => 500, 'height' => null, 'sufix' => 'secondary'],
+            ['width' => null, 'height' => 310, 'sufix' => 'primary'],
+            ['width' => null, 'height' => 170, 'sufix' => 'secondary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
-            ['width' => 100, 'height' => null, 'sufix' => 'icon'],
+            ['width' => null, 'height' => 110, 'sufix' => 'icon'],
         ]
     ],
     'upgrade_programs_upgrade_program' => [
@@ -50,10 +50,10 @@ return [
     ],
     'program_gallery_program_gallery_pict' => [
         'sizes' => [
-            ['width' => 800, 'height' => 800, 'sufix' => 'primary'],
-            ['width' => 500, 'height' => null, 'sufix' => 'secondary'],
+            ['width' => null, 'height' => 365, 'sufix' => 'primary'],
+            ['width' => null, 'height' => 170, 'sufix' => 'secondary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
-            ['width' => 100, 'height' => null, 'sufix' => 'icon'],
+            ['width' => null, 'height' => 110, 'sufix' => 'icon'],
         ]
     ],
     'program_type_type_pict' => [
@@ -66,10 +66,10 @@ return [
     ],
     'program_gall_program_gallery_pict' => [
         'sizes' => [
-            ['width' => 800, 'height' => 800, 'sufix' => 'primary'],
-            ['width' => 500, 'height' => null, 'sufix' => 'secondary'],
+            ['width' => 800, 'height' => 365, 'sufix' => 'primary'],
+            ['width' => 500, 'height' => 170, 'sufix' => 'secondary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
-            ['width' => 100, 'height' => null, 'sufix' => 'icon'],
+            ['width' => 100, 'height' => 110, 'sufix' => 'icon'],
         ]
     ],
     'staff_list_face' => [

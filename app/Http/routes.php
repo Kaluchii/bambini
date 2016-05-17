@@ -30,16 +30,10 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
 	Route::get('/edit/type',                     'BackController@getType');
 	Route::get('/edit/educators',                'BackController@getEducators');
 	Route::get('/edit/contact',                  'BackController@getContact');
-	Route::get('/edit/blog',                     'BackController@getBlog');
 
 
 	Route::get('/edit/upgrade_programs/{id}',    'BackController@editProgram');
 	Route::get('/edit/upgrade_program/{id}',     'BackController@editType');
-	Route::get('/edit/educators/{id}',           'BackController@editEducator');
-	Route::get('/edit/blog/{id}',                'BackController@editBlog');
-
-	Route::get('/edit/type/{id}',                'BackController@editEvolution');
-
 
 
 });
@@ -50,7 +44,5 @@ Route::get('/',                       'FrontController@getIndex');
 Route::get('/programs',               'FrontController@getPrograms');
 Route::get('/educators',              'FrontController@getEducators');
 Route::get('/contacts',               'FrontController@getContacts');
-Route::get('/blog',                   'FrontController@getBlog');
 
 Route::get('/programs/{slug}',        'FrontController@getProgramsItem');
-Route::get('/blog/{id}',              'FrontController@getMore');

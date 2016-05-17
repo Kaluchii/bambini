@@ -7,9 +7,11 @@ use Interpro\QuickStorage\Concept\QueryAgent;
 
 use Illuminate\Http\Request;
 
-class BackController extends Controller {
+class BackController extends Controller
+{
 
 	private $queryAgent;
+
 
 	function __construct(QueryAgent $queryAgent)
 	{
@@ -20,9 +22,11 @@ class BackController extends Controller {
 		view()->share('dom_all_images', $images);
 	}
 
+
 	public function getIndex(){
 		return view('back.layout');
 	}
+
 
 	public function getAll(){
 		$all =  $this->queryAgent->getBlock('static_all_site',[],[]);
@@ -31,12 +35,14 @@ class BackController extends Controller {
 		]);
 	}
 
+
 	public function getAbout(){
 		$all =  $this->queryAgent->getBlock('static_about',[],[]);
 		return view('back.blocks.static_about',[
 			'static_about' => $all,
 		]);
 	}
+
 
 	public function getGallery(){
 		$all =  $this->queryAgent->getBlock('static_good_atm',[],[]);
@@ -45,12 +51,14 @@ class BackController extends Controller {
 		]);
 	}
 
+
 	public function getPrograms(){
 		$all =  $this->queryAgent->getBlock('dom_upgrade',[],[]);
 		return view('back.blocks.dom_upgrade',[
 			'dom_upgrade' => $all,
 		]);
 	}
+
 
 	public function getType(){
 		$all =  $this->queryAgent->getBlock('dom_target_upgrade',[],[]);
@@ -59,6 +67,7 @@ class BackController extends Controller {
 		]);
 	}
 
+
 	public function getEducators(){
 		$all =  $this->queryAgent->getBlock('dom_staff',[],[]);
 		return view('back.blocks.dom_staff',[
@@ -66,49 +75,32 @@ class BackController extends Controller {
 		]);
 	}
 
+
 	public function getContact(){
-		$all =  $this->queryAgent->getBlock('static_clients',[],[]);
-		return view('back.blocks.static_clients',[
-			'static_clients' => $all,
+		$all =  $this->queryAgent->getBlock('static_contacts',[],[]);
+		return view('back.blocks.static_contacts',[
+			'static_contacts' => $all,
 		]);
 	}
 
-	public function getBlog(){
-		$all =  $this->queryAgent->getBlock('static_study',[],[]);
-		$dom_study = $this->queryAgent->getBlock('dom_study',[],[]);
-		return view('back.blocks.static_study',[
-			'static_study' => $all,
-			'dom_study'  => $dom_study
-		]);
-	}
 
 	public function editProgram($id){
 		$item =  $this->queryAgent->getGroupItem('dom_upgrade','upgrade_programs',$id);
+		$staff =  $this->queryAgent->getBlock('dom_staff',[],[]);
 		return view('back.blocks.groupitems.dom_upgrade.upgrade_programs_edit',[
 			'item_upgrade_programs' => $item,
+			'staff' => $staff,
 		]);
 	}
+
 
 	public function editType($id){
 		$item =  $this->queryAgent->getGroupItem('dom_target_upgrade','upgrade_program',$id);
+		$staff =  $this->queryAgent->getBlock('dom_staff',[],[]);
 		return view('back.blocks.groupitems.dom_target_upgrade.upgrade_program_edit',[
 			'item_upgrade_program' => $item,
+			'staff' => $staff,
 		]);
 	}
-
-	public function editEducator($id){
-		$item =  $this->queryAgent->getGroupItem('safety_rules','',$id);
-		return view('back.blocks.groupitems.',[
-			'' => $item,
-		]);
-	}
-
-	public function editEvolution($id){
-		$item =  $this->queryAgent->getGroupItem('safety_rules','',$id);
-		return view('back.blocks.groupitems.',[
-			'' => $item,
-		]);
-	}
-
 
 }

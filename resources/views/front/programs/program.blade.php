@@ -1,8 +1,8 @@
 @extends('front.layout')
 <?php $title = 'Бамбини';
-        $i = 0?>
+$i = 0?>
 @section('content')
-    @include('front.index.menu')
+    @include('front.programs.menu')
     @yield('menu')
     <section class="content">
         <div class="head-block">
@@ -10,25 +10,29 @@
             <div class="photo-wrap">
                 @foreach($item->$gallery as $img)
                     <?php $i++ ?>
-                        @if($i == 1)
-                            <div class="col-1-2">
-                                <img src="/..images/crops/{{$img->program_gallery_pict_image->big_crop->link}}" alt="">
+                    @if($i == 1)
+                        <div class="col-1-2">
+                            <img src="/..images/crops/{{$img->program_gallery_pict_image->big_crop->link}}" alt="">
+                        </div>
+                    @elseif($i == 2)
+                        <div class="col-1-2">
+                            <div class="row-1-2">
+                                <img src="/../images/crops/{{$img->program_gallery_pict_image->medium_crop->link}}"
+                                     alt="">
+                                @elseif($i == 3)
+                                    <img src="/../images/crops/{{$img->program_gallery_pict_image->small_crop->link}}"
+                                         alt="">
                             </div>
-                        @elseif($i == 2)
-                            <div class="col-1-2">
+                            @elseif($i == 4)
                                 <div class="row-1-2">
-                                    <img src="/../images/crops/{{$img->program_gallery_pict_image->medium_crop->link}}" alt="">
-                        @elseif($i == 3)
-                                    <img src="/../images/crops/{{$img->program_gallery_pict_image->small_crop->link}}" alt="">
+                                    <img src="/../images/crops/{{$img->program_gallery_pict_image->small_crop->link}}"
+                                         alt="">
+                                    @elseif($i == 5)
+                                        <img src="/../images/crops/{{$img->program_gallery_pict_image->medium_crop->link}}"
+                                             alt="">
                                 </div>
-                        @elseif($i == 4)
-                                <div class="row-1-2">
-                                    <img src="/../images/crops/{{$img->program_gallery_pict_image->small_crop->link}}" alt="">
-                        @elseif($i == 5)
-                                    <img src="/../images/crops/{{$img->program_gallery_pict_image->medium_crop->link}}" alt="">
-                                </div>
-                            </div>
-                        @endif
+                        </div>
+                    @endif
                 @endforeach
             </div>
         </div>
@@ -45,23 +49,20 @@
             <div class="col-1-2">
                 <div class="teacher">
                     <h2>Программу ведут</h2>
-                    <img src="images/prof.PNG" alt="">
-                    <p class="name">ИМЯ</p>
-                    <p class="prof">Психолог</p>
+                    @foreach($educators->staff_list_group as $edu)
+                        <img src="images/{{$edu->face_image->secondary_link}}" alt="">
+                        <p class="name">{{$edu->name_field}}</p>
+                        <p class="prof">{{$edu->dolzhnost_field}}</p>
+                    @endforeach
                 </div>
                 <div class="watch">
                     <p>Смотрите так же</p>
                     <ul class="program-link-block">
-                        <li class="item-links"><a href="#">Субботняя группа</a></li>
-                        <li class="item-links"><a href="#">Группа выходного дня</a></li>
-                        <li class="item-links"><a href="#">Репетиторство начальных классов</a></li>
-                        <li class="item-links"><a href="#">Ментальная арифметика</a> </li>
-                        <li class="item-links"><a href="#">АРТ-терапия</a></li>
-                        <li class="item-links"><a href="#">Юные художники</a></li>
-                        <li class="item-links"><a href="#">Английския язык</a></li>
+                        @foreach($programs as $program)
+                            <li class="item-links"><a href="{{$program->slug_field}}">{{$program->name_field}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
-
             </div>
         </div>
         <div class="center">

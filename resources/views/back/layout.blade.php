@@ -32,21 +32,6 @@
                         <li class="menu-level-2"><a href="/adm/edit/type">Целевые программы</a></li>
                         <li class="menu-level-2"><a href="/adm/edit/educators">Педагоги</a></li>
                         <li class="menu-level-2"><a href="/adm/edit/contact">Контакты</a></li>
-                        <li class="menu-level-2"><a href="/adm/edit/blog">Блог</a></li>
-                    </ul>
-                </li>
-                <li class="menu-level-1">
-                    <span class="menu-name">Специальные блоки <i class="triangle">▲</i></span>
-                    <ul class="sub-menu">
-                        <li class="menu-level-2"><a href="/adm/edit/service">Услуги</a></li>
-                        <li class="menu-level-2"><a href="/adm/edit/facts">Факты</a></li>
-                        <li class="menu-level-2"><a href="/adm/edit/slider">Слайдер</a></li>
-                    </ul>
-                </li>
-                <li class="menu-level-1">
-                    <span class="menu-name">Настройки <i class="triangle">▲</i></span>
-                    <ul class="sub-menu">
-                        <li class="menu-level-2"><a href="#">text 1 </a></li>
                     </ul>
                 </li>
                 <li class="menu-level-1"><span class="menu-end"></span></li>

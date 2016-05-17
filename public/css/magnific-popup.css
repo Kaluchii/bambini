@@ -7,7 +7,7 @@
     z-index: 1042;
     overflow: hidden;
     position: fixed;
-    background: rgba(0, 114, 188, 0.90);
+    background: rgba(51, 153, 0, 0.9);
 }
 
 .mfp-wrap {
@@ -431,11 +431,11 @@ img.mfp-img {
 }
 
 button.mfp-arrow.mfp-arrow-left {
-    background: url(../img/left.png) no-repeat center center !important;
+    background: url(../images/left.png) no-repeat center center !important;
 }
 
 button.mfp-arrow.mfp-arrow-right {
-    background: url(../img/left.png) no-repeat center center !important;
+    background: url(../images/left.png) no-repeat center center !important;
     transform: rotate(180deg);
 }
 
