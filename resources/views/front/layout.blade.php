@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>{{{$title or 'Бамбини'}}}</title>
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         @include('front.style')
         @yield('style')
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,5 +20,13 @@
         </div>
         @include('front.scripts')
         @yield('scripts')
+        <div class="hide-block">
+            @include('front.popups.ask')
+            @include('front.popups.lesson')
+            @include('front.popups.thank')
+            @yield('ask')
+            @yield('lesson')
+            @yield('thank')
+        </div>
     </body>
 </html>

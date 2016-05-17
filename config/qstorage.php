@@ -29,6 +29,11 @@ return [
         ]
     ],
 
+    'static_contacts' => [
+        'title' => 'Контактная информация',
+        'textfields' => ['contact_descr'],
+    ],
+
     'dom_upgrade' => [
         'title' => 'Развивающие программы',
         'groups'=> [
@@ -43,7 +48,7 @@ return [
             ],
             'program_educators' => [
                 'owner' => 'upgrade_programs',
-                'numb' => 'educator_id'
+                'numbs' => ['educator_id']
             ]
         ]
     ],
@@ -65,13 +70,13 @@ return [
             ],
             'target_program_educators' => [
                 'owner' => 'upgrade_program',
-                'numb' => 'educator_id'
+                'numbs' => ['educator_id']
             ]
         ],
     ],
 
     'dom_staff' => [
-        'title' => 'Работники',
+        'title' => 'Педагоги Bambini',
         'groups'=> [
             'staff_list' => [
                 'images' => ['face'],
@@ -88,6 +93,21 @@ return [
             ]
         ]
     ],
+
+// =====================================================================
+    'fidback' => [
+        'stringfields' => ['mail_rec','mail_username','site_name'],
+        'groups' => [
+            'lesson' =>[
+                'stringfields' => ['fio','email','phone','comment'],
+                'bools'        => ['mailed']
+            ],
+            'ask' =>[
+                'stringfields' => ['fio','email','question'],
+                'bools'        => ['mailed']
+            ]
+        ]
+    ]
 
 
 

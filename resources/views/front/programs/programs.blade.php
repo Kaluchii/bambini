@@ -2,7 +2,7 @@
 <?php $title = 'Бамбини';
         $j = 0;?>
 @section('content')
-    @include('front.index.menu')
+    @include('front.programs.menu')
     @yield('menu')
     <section class="content">
         <div class="programs">

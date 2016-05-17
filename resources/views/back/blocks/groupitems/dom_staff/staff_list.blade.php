@@ -1,6 +1,7 @@
 <li class="group" data-group-id="{{$item_staff_list->id_field}}">
     <div class="title-block">
         <label class="group-title">
+            Педагог
         </label>
         <button type="button" class="any_delete" data-block="dom_staff" data-group="staff_list" data-entity="groupitem"
                 data-item-id="{{$item_staff_list->id_field}}" data-descr="Эл. первой группы"> Удалить
@@ -9,6 +10,7 @@
     <div class="block ">
         <div class="field-wrap ">
             <label class="input-file">
+                Изображение
             </label>
             <div class="image-load">
                 <div class="drag-n-drop">
@@ -49,7 +51,7 @@
                                data-block="dom_staff">
                         <label class="file-input">
                             Загрузить
-                            <input type="file" accept="image/*" class="input_file block_field" data-field-name="face"
+                            <input type="file" accept="image/*" class="input_file group_field" data-field-name="face"
                                    data-field-type="image" data-block="dom_staff" data-group="staff_list"
                                    data-item-id="{{$item_staff_list->id_field}}" data-entity="groupitem">
                         </label>
@@ -59,6 +61,7 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Имя
             </label>
             <input type="text" data-field-type="string" data-field-name="name" data-block="dom_staff"
                    data-group="staff_list" class="input group_field" value="{{$item_staff_list->name_field}}"
@@ -66,6 +69,7 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Должность
             </label>
             <input type="text" data-field-type="string" data-field-name="dolzhnost" data-block="dom_staff"
                    data-group="staff_list" class="input group_field" value="{{$item_staff_list->dolzhnost_field}}"
@@ -73,6 +77,7 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                О педагоге
             </label>
             <textarea data-field-type="text" data-field-name="descr" data-block="dom_staff" data-group="staff_list"
                       class="input group_field" data-item-id="{{$item_staff_list->id_field}}"

@@ -47,13 +47,18 @@
             <div class="block">
                 @foreach($target_programs->program_type_group as $item)
                     <div class="col-1-2">
-                        <a href="/programs/{{$item->slug_field}}">
+                        <a href="#">
                             <div class="wrap">
                                 <img src="images/{{$item->type_pict_image->primary_link}}" alt="" class="program-title">
                             </div>
                             <p class="title-2">{{$item->type_name_field}}</p>
                         </a>
                         <div class="about-program">{!! $item->type_descr_field !!}</div>
+                        <ul class="program-link-block">
+                            @foreach($item->upgrade_program_group as $field)
+                                <li class="item-links"><a href="/programs/{{$field->slug_field}}">{{$field->program_name_field}}</a> {{$field->program_name_descr_field}}</li>
+                            @endforeach
+                        </ul>
                     </div>
                 @endforeach
             </div>
@@ -80,28 +85,28 @@
                 @if($i == 1)
                     <div class="row">
                         <div class="col-1-3">
-                            <div class="row-1-2"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/crops/{{$img->atm_pict_image->medium_crop->link}}" alt=""></a></div>
+                            <div class="row-1-2"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->medium_crop->link}}" alt=""></a></div>
                 @elseif($i == 2)
-                            <div class="row-1-2"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/crops/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
+                            <div class="row-1-2"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
                         </div>
                 @elseif($i == 3)
                         <div class="col-1-3">
-                            <div class="row-1-1"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/crops/{{$img->atm_pict_image->big_crop->link}}" alt=""></a></div>
+                            <div class="row-1-1"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->big_crop->link}}" alt=""></a></div>
                         </div>
                 @elseif($i == 4)
                         <div class="col-1-3">
-                            <div class="row-1-2"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/crops/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
+                            <div class="row-1-2"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
                 @elseif($i == 5)
-                            <div class="row-1-2"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/crops/{{$img->atm_pict_image->medium_crop->link}}" alt=""></a></div>
+                            <div class="row-1-2"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->medium_crop->link}}" alt=""></a></div>
                         </div>
                     </div>
                 @elseif($i == 6)
                     <div class="row two">
-                        <div class="col-1-3"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/crops/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
+                        <div class="col-1-3"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
                 @elseif($i == 7)
-                        <div class="col-1-3"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/crops/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
+                        <div class="col-1-3"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
                 @elseif($i == 8)
-                        <div class="col-1-3"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/crops/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
+                        <div class="col-1-3"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
                     </div>
                 @endif
             @endforeach

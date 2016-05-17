@@ -187,6 +187,7 @@ section.content {
         justify-content: center;
         padding: 20px 30px 20px;
         div.col-1-2 {
+          a{
           .program-link-block {
             margin-top: 10px;
             padding-left: 20px;
@@ -202,45 +203,57 @@ section.content {
               }
             }
           }
-          a {
-            display: flex;
-            flex-direction: column;
-            width: 470px;
-            height: 220px;
-            .wrap {
-              position: absolute;
-              img {
-                position: relative;
-                transition: 0.5s all ease;
-              }
-            }
-            p.title-2 {
-              padding-top: 20px;
-              padding-left: 20px;
-              position: relative;
-              z-index: 2;
-              width: 200px;
-              color: #ffffff;
-              font-family: "RotondaC";
-              font-weight: bold;
-              font-size: 28px;
-            }
-            &:hover {
-              .wrap {
-                img {
-                  transition: 0.5s all ease;
-                  transform: translate(0, -26px);
-                }
-              }
-            }
 
+          display: flex;
+          flex-direction: column;
+          width: 470px;
+          height: 220px;
+          .wrap {
+            position: absolute;
+            img {
+              position: relative;
+              transition: 0.5s all ease;
+            }
           }
-          .about-program {
-            padding-top: 25px;
+          p.title-2 {
+            padding-top: 20px;
             padding-left: 20px;
-            line-height: 24px;
-            color: #666666;
-            width: 350px;
+            position: relative;
+            z-index: 2;
+            width: 200px;
+            color: #ffffff;
+            font-family: "RotondaC";
+            font-weight: bold;
+            font-size: 28px;
+          }
+          &:hover {
+            .hide-menu{
+
+            }
+          }
+
+        }
+        }
+        .about-program {
+          padding-top: 25px;
+          padding-left: 20px;
+          line-height: 24px;
+          color: #666666;
+          width: 350px;
+        }
+        .program-link-block {
+          margin-top: 10px;
+          padding-left: 20px;
+          .item-links {
+            font-size: 14px;
+            color: #999999;
+            margin-bottom: 10px;
+            a {
+              display: inline;
+              height: auto;
+              font-size: 16px;
+              .link(@h-link, @h-bord, @h-hover, @h-bord-h);
+            }
           }
         }
       }
@@ -530,6 +543,90 @@ section.content {
   .center {
     margin: 160px 0 30px 0;
     text-align: center;
+    p.text{
+      color: #666666;
+      padding-bottom: 10px;
+    }
   }
 
+
+
+// techer page
+  .head-title{
+    h1{
+      text-align: center;
+      font-size:48px;
+      font-family: RotondaC;
+      font-weight: normal;
+      padding-top: 35px;
+
+    }
+  }
+  .teacher-block{
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    padding-top: 40px;
+    .col-1-2{
+      &:first-child{
+        padding-right: 50px;
+        img.photo{
+
+        }
+      }
+      &:last-child{
+        h2.name{
+          color: @h-hover;
+          font-family: RotondaC;
+          font-size:32px;
+          margin-top: 0;
+          line-height: 28px;
+        }
+        p.prof{
+          color: #999999;
+          margin-top: 15px;
+        }
+        p.content-title{
+          color: #333333;
+          font-weight: bold;
+          margin-top: 30px;
+        }
+        .text-block{
+          max-width: 450px;
+          margin-top: 25px;
+          h4 {
+            font-size: 18px;
+            line-height: 27px;
+            color: #333333;
+            margin-bottom: 25px;
+          }
+
+          p {
+            font-size: 16px;
+            margin-bottom: 25px;
+            color: #666666;
+            line-height: 24px;
+          }
+          h2 {
+            font-family: "RotondaC";
+            font-size: 24px;
+            color: @h-hover;
+            margin-top: 40px;
+            margin-bottom: 30px;
+
+          }
+        }
+        ul.programs{
+          .item{
+            margin-bottom: 5px;
+            font-size: 18px;
+            a{
+              font-size:16px;
+              .link(@h-link,@h-bord,@h-hover,@h-bord-h);
+            }
+          }
+        }
+      }
+    }
+  }
 }
