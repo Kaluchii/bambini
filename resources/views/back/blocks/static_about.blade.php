@@ -120,7 +120,7 @@
                    class="input block_field" value="{{$static_about->feature_title_field}}" placeholder="Строка">
         </div>
         <div class="field-wrap ">
-            <label class="input-file">Список особенностей Бамбини
+            <label class="input-file">Список особенностей Бамбини</label>
                 <ul class="group-block group_container" data-block="static_about" data-group="features"
                     data-owner-id="0">
                     @foreach($static_about->features_group as $item_features )
@@ -130,7 +130,6 @@
                 <button class="any_create" data-block="static_about" data-group="features"
                         data-descr="Эл. первой группы" data-owner-id="0"> Добавить
                 </button>
-            </label>
         </div>
         <div class="field-wrap buttons">
             <button class="btn btn-primary pull-right any_save" data-block="static_about" data-entity="block"

@@ -9,7 +9,7 @@
                    class="input block_pre_field" value="{{$dom_staff->title_field}}" placeholder="Заголовок">
         </div>
         <div class="field-wrap ">
-            <label class="input-file">Список педагогов
+            <label class="input-file">Список педагогов</label>
                 <ul class="group-block group_container" data-block="dom_staff" data-group="staff_list"
                     data-owner-id="0">
                     @foreach($dom_staff->staff_list_group as $item_staff_list )
@@ -19,7 +19,6 @@
                 <button class="any_create" data-block="dom_staff" data-group="staff_list" data-descr="Эл. первой группы"
                         data-owner-id="0"> Добавить
                 </button>
-            </label>
         </div>
         <div class="field-wrap buttons">
             <button class="btn btn-primary pull-right any_save" data-block="dom_staff" data-entity="block"

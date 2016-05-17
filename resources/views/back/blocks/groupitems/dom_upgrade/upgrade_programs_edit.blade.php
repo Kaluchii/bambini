@@ -87,7 +87,7 @@
                        data-item-id="{{$item_upgrade_programs->id_field}}" placeholder="Строка">
             </div>
             <div class="field-wrap ">
-                <label class="input-file">Преподаватели программы
+                <label class="input-file">Преподаватели программы</label>
                     <ul class="group-block group_container" data-block="dom_upgrade" data-group="program_educators"
                         data-owner-id="{{$item_upgrade_programs->id_field}}">
                         @foreach($item_upgrade_programs->program_educators_group as $educators)
@@ -97,7 +97,6 @@
                     <button class="any_create" data-block="dom_upgrade" data-group="program_educators"
                             data-descr="Эл. первой группы" data-owner-id="{{$item_upgrade_programs->id_field}}"> Добавить
                     </button>
-                </label>
             </div>
             <div class="field-wrap ">
                 <label class="input-file">
