@@ -18,6 +18,7 @@
                             <p class={{"title-".$j}}>{{$item->program_name_field}}</p>
                         </a>
                         <div class="about-program">{!! $item->preview_descr_field !!}</div>
+
                     </div>
                 @endforeach
             </div>
