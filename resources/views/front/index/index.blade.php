@@ -1,5 +1,5 @@
 @extends('front.layout')
-<?php $title = 'Бамбини';
+<?php $title = 'Bambini — О клубе';
       $i = 0;
       $j = 0;
       $c = 0?>
@@ -72,7 +72,7 @@
                         <div class="text">{!! $item->feature_descr_field !!}</div>
                         <?php $c++ ?>
                         @if($c == 4)
-                            <p><a href="#">Педагоги бамбини</a></p>
+                            <p><a href="/educators">Педагоги бамбини</a></p>
                         @endif
                     </li>
                 @endforeach

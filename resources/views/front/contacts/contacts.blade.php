@@ -1,5 +1,5 @@
 @extends('front.layout')
-<?php $title = 'Бамбини'?>
+<?php $title = 'Bambini — Контакты'?>
 @section('content')
     @include('front.contacts.menu')
     @yield('menu')
