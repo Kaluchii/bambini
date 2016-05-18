@@ -431,11 +431,11 @@ img.mfp-img {
 }
 
 button.mfp-arrow.mfp-arrow-left {
-    background: url(../images/left.png) no-repeat center center !important;
+    background: url(../img/left.png) no-repeat center center !important;
 }
 
 button.mfp-arrow.mfp-arrow-right {
-    background: url(../images/left.png) no-repeat center center !important;
+    background: url(../img/left.png) no-repeat center center !important;
     transform: rotate(180deg);
 }
 
