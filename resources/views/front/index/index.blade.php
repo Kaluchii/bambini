@@ -68,7 +68,7 @@
             <ul class="features-block">
                 @foreach($about->features_group as $item)
                     <li class="feature"><img src="images/{{$item->feature_pict_image->secondary_link}}" alt="">
-                        <div class="bold">{{$item->feature_name_field}}</div>
+                        <p class="bold">{{$item->feature_name_field}}</p>
                         <div class="text">{!! $item->feature_descr_field !!}</div>
                         <?php $c++ ?>
                         @if($c == 4)
