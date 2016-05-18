@@ -1,5 +1,5 @@
 @extends('front.layout')
-<?php $title = 'Бамбини';
+<?php $title = 'Bambini — Развивающие программы';
         $j = 0;?>
 @section('content')
     @include('front.programs.menu')

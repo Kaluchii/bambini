@@ -1,5 +1,5 @@
 @extends('front.layout')
-<?php $title = 'Бамбини';
+<?php $title = 'Bambini — ' . $item->name_field;
 $i = 0?>
 @section('content')
     @include('front.programs.menu')
@@ -50,9 +50,13 @@ $i = 0?>
                 <div class="teacher">
                     <h2>Программу ведут</h2>
                     @foreach($educators->staff_list_group as $edu)
-                        <img src="images/{{$edu->face_image->secondary_link}}" alt="">
-                        <p class="name">{{$edu->name_field}}</p>
-                        <p class="prof">{{$edu->dolzhnost_field}}</p>
+                        @foreach($item->$educator_id as $educ_id)
+                            @if($edu->id_field == $educ_id->educator_id_field)
+                                <img src="images/{{$edu->face_image->secondary_link}}" alt="">
+                                <p class="name">{{$edu->name_field}}</p>
+                                <p class="prof">{{$edu->dolzhnost_field}}</p>
+                            @endif
+                        @endforeach
                     @endforeach
                 </div>
                 <div class="watch">
@@ -70,6 +74,6 @@ $i = 0?>
             <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir" data-counter=""></div>
         </div>
     </section>
-    @include('front.programs.footer2')
+    @include('front.programs.footer')
     @yield('footer')
 @endsection

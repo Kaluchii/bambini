@@ -57,7 +57,7 @@ class FrontController extends Controller
                 'item' => $item,
                 'programs' => $programs,
                 'gallery'=>'program_gallery_group',
-                'educator_id'=>'program_educators'
+                'educator_id'=>'program_educators_group'
             ]);
         }
         catch (\Exception $exception){
@@ -71,7 +71,7 @@ class FrontController extends Controller
                     'item' => $item,
                     'programs' => $programs,
                     'gallery'=>'program_gall_group',
-                    'educator_id'=>'target_program_educators'
+                    'educator_id'=>'target_program_educators_group'
                 ]);
             }
             catch (\Exception $exception){
