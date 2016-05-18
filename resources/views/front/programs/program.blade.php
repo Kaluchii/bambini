@@ -17,18 +17,18 @@ $i = 0?>
                     @elseif($i == 2)
                         <div class="col-1-2">
                             <div class="row-1-2">
-                                <img src="/../images/crops/{{$img->program_gallery_pict_image->medium_crop->link}}"
+                                <img src="/images/crops/{{$img->program_gallery_pict_image->medium_crop->link}}"
                                      alt="">
                                 @elseif($i == 3)
-                                    <img src="/../images/crops/{{$img->program_gallery_pict_image->small_crop->link}}"
+                                    <img src="/images/crops/{{$img->program_gallery_pict_image->small_crop->link}}"
                                          alt="">
                             </div>
                             @elseif($i == 4)
                                 <div class="row-1-2">
-                                    <img src="/../images/crops/{{$img->program_gallery_pict_image->small_crop->link}}"
+                                    <img src="/images/crops/{{$img->program_gallery_pict_image->small_crop->link}}"
                                          alt="">
                                     @elseif($i == 5)
-                                        <img src="/../images/crops/{{$img->program_gallery_pict_image->medium_crop->link}}"
+                                        <img src="/images/crops/{{$img->program_gallery_pict_image->medium_crop->link}}"
                                              alt="">
                                 </div>
                         </div>
@@ -52,7 +52,7 @@ $i = 0?>
                     @foreach($educators->staff_list_group as $edu)
                         @foreach($item->$educator_id as $educ_id)
                             @if($edu->id_field == $educ_id->educator_id_field)
-                                <img src="images/{{$edu->face_image->secondary_link}}" alt="">
+                                <img src="/images/{{$edu->face_image->secondary_link}}" alt="">
                                 <p class="name">{{$edu->name_field}}</p>
                                 <p class="prof">{{$edu->dolzhnost_field}}</p>
                             @endif

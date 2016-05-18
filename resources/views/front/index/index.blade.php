@@ -9,7 +9,7 @@
     <section class="content index">
         <div class="head">
             <div class="image-wrap">
-                <img src="images/{{$about->head_image->primary_link}}" alt="">
+                <img src="/images/{{$about->head_image->primary_link}}" alt="">
             </div>
             <h1 class="title">{{$about->question_field}}</h1>
             <ul class="facts">
@@ -20,7 +20,7 @@
         </div>
         <div class="about">
             <div class="col-1-2">
-                <img src="images/{{$about->director_face_image->primary_link}}" alt="" class="photo">
+                <img src="/images/{{$about->director_face_image->primary_link}}" alt="" class="photo">
                 <p class="dir-name">{{$about->director_name_field}}</p>
                 <p class="prof">{{$about->director_prof_field}}</p>
             </div>
@@ -36,7 +36,7 @@
                     <div class="col-1-3">
                         <a href="/programs/{{$item->slug_field}}">
                             <div class="wrap">
-                                <img src="images/{{$item->upgrade_program_image->primary_link}}" alt="" class="program-title">
+                                <img src="/images/{{$item->upgrade_program_image->primary_link}}" alt="" class="program-title">
                             </div>
                             <p class={{"title-".$j}}>{{$item->program_name_field}}</p>
                         </a>
@@ -49,7 +49,7 @@
                     <div class="col-1-2">
                         <a href="#">
                             <div class="wrap">
-                                <img src="images/{{$item->type_pict_image->primary_link}}" alt="" class="program-title">
+                                <img src="/images/{{$item->type_pict_image->primary_link}}" alt="" class="program-title">
                             </div>
                             <p class="title-2">{{$item->type_name_field}}</p>
                         </a>
@@ -67,7 +67,7 @@
             <h2 class="block-title">{{$about->feature_title_field}}</h2>
             <ul class="features-block">
                 @foreach($about->features_group as $item)
-                    <li class="feature"><img src="images/{{$item->feature_pict_image->secondary_link}}" alt="">
+                    <li class="feature"><img src="/images/{{$item->feature_pict_image->secondary_link}}" alt="">
                         <p class="bold">{{$item->feature_name_field}}</p>
                         <div class="text">{!! $item->feature_descr_field !!}</div>
                         <?php $c++ ?>
@@ -85,28 +85,28 @@
                 @if($i == 1)
                     <div class="row">
                         <div class="col-1-3">
-                            <div class="row-1-2"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->medium_crop->link}}" alt=""></a></div>
+                            <div class="row-1-2"><a href="/images/{{$img->atm_pict_image->original_link}}"><img src="/images/{{$img->atm_pict_image->medium_crop->link}}" alt=""></a></div>
                 @elseif($i == 2)
-                            <div class="row-1-2"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
+                            <div class="row-1-2"><a href="/images/{{$img->atm_pict_image->original_link}}"><img src="/images/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
                         </div>
                 @elseif($i == 3)
                         <div class="col-1-3">
-                            <div class="row-1-1"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->big_crop->link}}" alt=""></a></div>
+                            <div class="row-1-1"><a href="/images/{{$img->atm_pict_image->original_link}}"><img src="/images/{{$img->atm_pict_image->big_crop->link}}" alt=""></a></div>
                         </div>
                 @elseif($i == 4)
                         <div class="col-1-3">
-                            <div class="row-1-2"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
+                            <div class="row-1-2"><a href="/images/{{$img->atm_pict_image->original_link}}"><img src="/images/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
                 @elseif($i == 5)
-                            <div class="row-1-2"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->medium_crop->link}}" alt=""></a></div>
+                            <div class="row-1-2"><a href="/images/{{$img->atm_pict_image->original_link}}"><img src="/images/{{$img->atm_pict_image->medium_crop->link}}" alt=""></a></div>
                         </div>
                     </div>
                 @elseif($i == 6)
                     <div class="row two">
-                        <div class="col-1-3"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
+                        <div class="col-1-3"><a href="/images/{{$img->atm_pict_image->original_link}}"><img src="/images/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
                 @elseif($i == 7)
-                        <div class="col-1-3"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
+                        <div class="col-1-3"><a href="/images/{{$img->atm_pict_image->original_link}}"><img src="/images/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
                 @elseif($i == 8)
-                        <div class="col-1-3"><a href="images/{{$img->atm_pict_image->original_link}}"><img src="images/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
+                        <div class="col-1-3"><a href="/images/{{$img->atm_pict_image->original_link}}"><img src="/images/{{$img->atm_pict_image->small_crop->link}}" alt=""></a></div>
                     </div>
                 @endif
             @endforeach
@@ -118,7 +118,7 @@
             @foreach($gallery->good_atm_gallery_group as $img)
                     <?php $i++ ?>
                     @if($i > 8)
-                        <a href="images/{{$img->atm_pict_image->original_link}}"></a>
+                        <a href="/images/{{$img->atm_pict_image->original_link}}"></a>
                     @endif
                 @endforeach
             </div>

@@ -985,6 +985,10 @@ footer.footer {
   position: relative;
   background: url(../img/footer.png) no-repeat top center, #efede7;
 }
+.index + footer.footer {
+  position: relative;
+  background: url(../img/footer.png) no-repeat top center, #efede7;
+}
 footer.footer .social-block {
   background: #ffffff;
   width: 700px;

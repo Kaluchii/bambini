@@ -11,7 +11,7 @@ $b = true?>
         @foreach($educators->staff_list_group as $edu)
             <div class="teacher-block">
                 <div class="col-1-2">
-                    <img src="images/{{$edu->face_image->primary_link}}" alt="" class="photo">
+                    <img src="/images/{{$edu->face_image->primary_link}}" alt="" class="photo">
                 </div>
                 <div class="col-1-2">
                     <h2 class="name">{{$edu->name_field}}</h2>
