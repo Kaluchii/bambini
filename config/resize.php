@@ -74,7 +74,7 @@ return [
     ],
     'staff_list_face' => [
         'sizes' => [
-            ['width' => 700, 'height' => null, 'sufix' => 'primary'],
+            ['width' => null, 'height' => 290, 'sufix' => 'primary'],
             ['width' => null, 'height' => 130, 'sufix' => 'secondary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
             ['width' => 100, 'height' => null, 'sufix' => 'icon'],

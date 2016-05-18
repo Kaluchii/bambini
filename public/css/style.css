@@ -248,7 +248,7 @@ section.content div.programs div.block div.col-1-3 {
 section.content div.programs div.block div.col-1-3:first-child {
   width: 330px;
 }
-section.content div.programs div.block div.col-1-3:first-child p.about-program {
+section.content div.programs div.block div.col-1-3:first-child div.about-program {
   color: #666666;
   padding-top: 355px;
   padding-left: 40px;
@@ -257,13 +257,13 @@ section.content div.programs div.block div.col-1-3:first-child p.about-program {
 section.content div.programs div.block div.col-1-3:last-child {
   width: 330px;
 }
-section.content div.programs div.block div.col-1-3:last-child p.about-program {
+section.content div.programs div.block div.col-1-3:last-child div.about-program {
   color: #666666;
   padding-top: 345px;
   padding-left: 20px;
   line-height: 24px;
 }
-section.content div.programs div.block div.col-1-3 p.about-program {
+section.content div.programs div.block div.col-1-3 div.about-program {
   color: #666666;
   padding-top: 350px;
   padding-left: 30px;
@@ -488,14 +488,14 @@ section.content .features .features-block .feature p.bold {
   color: #333333;
   padding-bottom: 10px;
 }
-section.content .features .features-block .feature p.text {
+section.content .features .features-block .feature div.text {
   -webkit-flex-basis: 20%;
       -ms-flex-preferred-size: 20%;
           flex-basis: 20%;
   line-height: 21px;
   color: #666666;
 }
-section.content .features .features-block .feature:last-child p.text {
+section.content .features .features-block .feature:last-child div.text {
   padding-bottom: 40px;
 }
 section.content .features .features-block .feature a {
