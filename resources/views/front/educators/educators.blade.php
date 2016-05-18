@@ -1,6 +1,5 @@
 @extends('front.layout')
-<?php $title = 'Bambini — Педагоги';
-$b = true?>
+<?php $title = 'Bambini — Педагоги'?>
 @section('content')
     @include('front.educators.menu')
     @yield('menu')
@@ -9,6 +8,7 @@ $b = true?>
             <h1>{{$educators->title_field}}</h1>
         </div>
         @foreach($educators->staff_list_group as $edu)
+            <?php $b = true ?>
             <div class="teacher-block">
                 <div class="col-1-2">
                     <img src="/images/{{$edu->face_image->primary_link}}" alt="" class="photo">

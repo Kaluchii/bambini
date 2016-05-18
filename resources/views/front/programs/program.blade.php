@@ -12,23 +12,23 @@ $i = 0?>
                     <?php $i++ ?>
                     @if($i == 1)
                         <div class="col-1-2">
-                            <img src="/..images/crops/{{$img->program_gallery_pict_image->big_crop->link}}" alt="">
+                            <img src="/images/{{$img->program_gallery_pict_image->big_crop->link}}" alt="">
                         </div>
                     @elseif($i == 2)
                         <div class="col-1-2">
                             <div class="row-1-2">
-                                <img src="/images/crops/{{$img->program_gallery_pict_image->medium_crop->link}}"
+                                <img src="/images/{{$img->program_gallery_pict_image->medium_crop->link}}"
                                      alt="">
                                 @elseif($i == 3)
-                                    <img src="/images/crops/{{$img->program_gallery_pict_image->small_crop->link}}"
+                                    <img src="/images/{{$img->program_gallery_pict_image->small_crop->link}}"
                                          alt="">
                             </div>
                             @elseif($i == 4)
                                 <div class="row-1-2">
-                                    <img src="/images/crops/{{$img->program_gallery_pict_image->small_crop->link}}"
+                                    <img src="/images/{{$img->program_gallery_pict_image->small_crop->link}}"
                                          alt="">
                                     @elseif($i == 5)
-                                        <img src="/images/crops/{{$img->program_gallery_pict_image->medium_crop->link}}"
+                                        <img src="/images/{{$img->program_gallery_pict_image->medium_crop->link}}"
                                              alt="">
                                 </div>
                         </div>
