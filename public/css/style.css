@@ -640,6 +640,7 @@ section.content .head-block .photo-wrap {
 section.content .head-block .photo-wrap .col-1-2:first-child img {
   padding: 3px;
   background: #ffffff;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.5);
 }
 section.content .head-block .photo-wrap .col-1-2:last-child {
   display: -webkit-box;
@@ -665,10 +666,13 @@ section.content .head-block .photo-wrap .col-1-2:last-child .row-1-2 {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+  margin-bottom: 5px;
 }
 section.content .head-block .photo-wrap .col-1-2:last-child .row-1-2 img {
   padding: 3px;
   background: #ffffff;
+  margin-right: 5px;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.5);
 }
 section.content .content-block {
   display: -webkit-box;
@@ -1115,4 +1119,7 @@ footer.footer .wrap .col-1-2 p a:hover {
 }
 section.content .content-block .col-1-2:last-child .teacher p.prof + img {
   padding-top: 25px;
+}
+section.content .head-block .photo-wrap .col-1-2:first-child{
+  margin-right: 5px;
 }
