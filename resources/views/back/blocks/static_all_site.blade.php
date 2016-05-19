@@ -73,7 +73,7 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
-                Текс в футере
+                Текст в футере
             </label>
             <input type="text" data-field-type="string" data-field-name="tell_everyone" data-block="static_all_site"
                    class="input block_field" value="{{$static_all_site->tell_everyone_field}}" placeholder="Строка">
