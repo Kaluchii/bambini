@@ -84,6 +84,14 @@ class BackController extends Controller
 	}
 
 
+	public function getFidback(){
+		$all =  $this->queryAgent->getBlock('fidback',[],[]);
+		return view('back.blocks.fidback',[
+			'fidback' => $all,
+		]);
+	}
+
+
 	public function editProgram($id){
 		$item =  $this->queryAgent->getGroupItem('dom_upgrade','upgrade_programs',$id);
 		$staff =  $this->queryAgent->getBlock('dom_staff',[],[]);
