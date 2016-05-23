@@ -32,6 +32,7 @@
                         <li class="menu-level-2"><a href="/adm/edit/type">Целевые программы</a></li>
                         <li class="menu-level-2"><a href="/adm/edit/educators">Педагоги</a></li>
                         <li class="menu-level-2"><a href="/adm/edit/contact">Контакты</a></li>
+                        <li class="menu-level-2"><a href="/adm/edit/fidback">Обратная связь</a></li>
                     </ul>
                 </li>
                 <li class="menu-level-1"><span class="menu-end"></span></li>

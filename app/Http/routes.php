@@ -30,6 +30,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
 	Route::get('/edit/type',                     'BackController@getType');
 	Route::get('/edit/educators',                'BackController@getEducators');
 	Route::get('/edit/contact',                  'BackController@getContact');
+	Route::get('/edit/fidback',                  'BackController@getFidback');
 
 
 	Route::get('/edit/upgrade_programs/{id}',    'BackController@editProgram');
