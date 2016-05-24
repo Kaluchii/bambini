@@ -103,7 +103,8 @@ return [
                 'bools'        => ['mailed']
             ],
             'ask' =>[
-                'stringfields' => ['fio','email','question'],
+                'stringfields' => ['fio','email'],
+                'textfields'   => ['question'],
                 'bools'        => ['mailed']
             ]
         ]
