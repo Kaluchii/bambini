@@ -17,6 +17,9 @@ body {
 .hide-block {
   display: none;
 }
+.hide-block {
+
+}
 @font-face {
   font-family: 'RotondaC';
   src: url('../fonts/RotondaC-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/RotondaC-Bold.otf') format('opentype'), url('../fonts/RotondaC-Bold.woff') format('woff'), url('../fonts/RotondaC-Bold.ttf') format('truetype'), url('../fonts/RotondaC-Bold.svg#RotondaC-Bold') format('svg');
@@ -1056,7 +1059,7 @@ footer.footer .wrap .col-1-2 p a:hover {
 .white-popup {
   position: relative;
   background: white;
-  padding: 40px 40px 20px 40px;
+  padding: 40px 50px 40px 50px;
   width: auto;
   max-width: 350px;
   margin: 20px auto;
@@ -1067,6 +1070,10 @@ footer.footer .wrap .col-1-2 p a:hover {
   line-height: 36px;
   color: #333333;
   margin-bottom: 20px;
+  text-align: center;
+}
+.white-popup .popup_text {
+  text-align: center;
 }
 .white-popup .row {
   margin-bottom: 20px;
