@@ -77,7 +77,7 @@ $(document).ready(function(){
             dataobj);
 
         if(!validater){
-            clear_field(unical);
+
             var deferred = $.ajax(
                 {
                     type: 'POST',
@@ -93,6 +93,7 @@ $(document).ready(function(){
                     },
                     type: 'inline'
                 });
+                clear_field(unical);
             });
             deferred.fail(function(data){
 
