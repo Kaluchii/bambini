@@ -1,6 +1,7 @@
 @extends('front.layout')
 <?php $title = 'Bambini — ' . $item->name_field;
-$i = 0?>
+$i = 0;
+$b = true?>
 @section('content')
     @include('front.programs.menu')
     @yield('menu')
@@ -48,10 +49,13 @@ $i = 0?>
             </div>
             <div class="col-1-2">
                 <div class="teacher">
-                    <h2>Программу ведут</h2>
                     @foreach($educators->staff_list_group as $edu)
                         @foreach($item->$educator_id as $educ_id)
                             @if($edu->id_field == $educ_id->educator_id_field)
+                                @if($b)
+                                    <h2>Программу ведут</h2>
+                                    <?php $b = false; ?>
+                                @endif
                                 <img src="/images/{{$edu->face_image->secondary_link}}" alt="">
                                 <p class="name">{{$edu->name_field}}</p>
                                 <p class="prof">{{$edu->dolzhnost_field}}</p>
