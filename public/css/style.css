@@ -387,7 +387,7 @@ section.content div.programs div.block:last-child div.col-1-2 a .program-link-bl
   background-size: 10px 1px;
   background-repeat: repeat-x;
 }
-section.content div.programs div.block:last-child div.col-1-2 a .wrap {
+section.content div.programs div.block:last-child div.col-1-2 .wrap {
   position: absolute;
 }
 section.content div.programs div.block:last-child div.col-1-2 a .wrap img {
