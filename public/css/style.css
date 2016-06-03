@@ -387,15 +387,15 @@ section.content div.programs div.block:last-child div.col-1-2 a .program-link-bl
   background-size: 10px 1px;
   background-repeat: repeat-x;
 }
-section.content div.programs div.block:last-child div.col-1-2 .wrap {
+section.content div.programs div.block:last-child div.col-1-2 a .wrap {
   position: absolute;
 }
-section.content div.programs div.block:last-child div.col-1-2 .wrap img {
+section.content div.programs div.block:last-child div.col-1-2 a .wrap img {
   position: relative;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
-section.content div.programs div.block:last-child div.col-1-2 p.title-2 {
+section.content div.programs div.block:last-child div.col-1-2 a p.title-2 {
   padding-top: 20px;
   padding-left: 20px;
   position: relative;
@@ -406,7 +406,7 @@ section.content div.programs div.block:last-child div.col-1-2 p.title-2 {
   font-weight: bold;
   font-size: 28px;
 }
-section.content div.programs div.block:last-child div.col-1-2 .about-program {
+section.content div.programs div.block:last-child .about-program {
   padding-top: 25px;
   padding-left: 20px;
   line-height: 24px;
