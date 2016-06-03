@@ -406,7 +406,7 @@ section.content div.programs div.block:last-child div.col-1-2 p.title-2 {
   font-weight: bold;
   font-size: 28px;
 }
-section.content div.programs div.block:last-child .about-program {
+section.content div.programs div.block:last-child div.col-1-2 .about-program {
   padding-top: 25px;
   padding-left: 20px;
   line-height: 24px;
