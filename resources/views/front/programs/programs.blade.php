@@ -25,12 +25,10 @@
             <div class="block">
                 @foreach($target_programs->program_type_group as $item)
                     <div class="col-1-2">
-                        <a href="#">
                             <div class="wrap">
                                 <img src="images/{{$item->type_pict_image->primary_link}}" alt="" class="program-title">
                             </div>
                             <p class="title-2">{{$item->type_name_field}}</p>
-                        </a>
                         <div class="about-program">{!! $item->type_descr_field !!}</div>
                         <ul class="program-link-block">
                             @foreach($item->upgrade_program_group as $field)
