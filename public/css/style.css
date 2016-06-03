@@ -338,7 +338,7 @@ section.content div.programs div.block:last-child {
   justify-content: center;
   padding: 20px 30px 20px;
 }
-section.content div.programs div.block:last-child div.col-1-2 {
+section.content div.programs div.block:last-child div.col-1-2 a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -387,10 +387,10 @@ section.content div.programs div.block:last-child div.col-1-2 a .program-link-bl
   background-size: 10px 1px;
   background-repeat: repeat-x;
 }
-section.content div.programs div.block:last-child div.col-1-2 .wrap {
+section.content div.programs div.block:last-child div.col-1-2 a .wrap {
   position: absolute;
 }
-section.content div.programs div.block:last-child div.col-1-2 .wrap img {
+section.content div.programs div.block:last-child div.col-1-2 a .wrap img {
   position: relative;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
