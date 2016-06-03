@@ -338,7 +338,7 @@ section.content div.programs div.block:last-child {
   justify-content: center;
   padding: 20px 30px 20px;
 }
-section.content div.programs div.block:last-child div.col-1-2 a {
+section.content div.programs div.block:last-child div.col-1-2 div.a-wrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -387,7 +387,7 @@ section.content div.programs div.block:last-child div.col-1-2 a .program-link-bl
   background-size: 10px 1px;
   background-repeat: repeat-x;
 }
-section.content div.programs div.block:last-child div.col-1-2 a .wrap {
+section.content div.programs div.block:last-child div.col-1-2 div.a-wrap .wrap {
   position: absolute;
 }
 section.content div.programs div.block:last-child div.col-1-2 a .wrap img {
@@ -395,7 +395,7 @@ section.content div.programs div.block:last-child div.col-1-2 a .wrap img {
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
-section.content div.programs div.block:last-child div.col-1-2 a p.title-2 {
+section.content div.programs div.block:last-child div.col-1-2 div.a-wrap p.title-2 {
   padding-top: 20px;
   padding-left: 20px;
   position: relative;
