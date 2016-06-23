@@ -2,7 +2,7 @@
 return [
     'static_all_site_logo' => [
         'sizes' => [
-            ['width' => null, 'height' => 42, 'sufix' => 'primary'],
+            ['width' => null, 'height' => 73, 'sufix' => 'primary'],
             ['width' => 500, 'height' => null, 'sufix' => 'secondary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
             ['width' => 100, 'height' => null, 'sufix' => 'icon'],
