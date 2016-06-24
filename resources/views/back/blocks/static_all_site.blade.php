@@ -52,7 +52,14 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
-                Телефон
+                Городской телефон
+            </label>
+            <input type="text" data-field-type="string" data-field-name="landline_phone" data-block="static_all_site"
+                   class="input block_field" value="{{$static_all_site->landline_phone_field}}" placeholder="Строка">
+        </div>
+        <div class="field-wrap ">
+            <label class="input-file">
+                Сотовый телефон
             </label>
             <input type="text" data-field-type="string" data-field-name="phone" data-block="static_all_site"
                    class="input block_field" value="{{$static_all_site->phone_field}}" placeholder="Строка">

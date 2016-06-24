@@ -4,7 +4,7 @@ return [
 
     'static_all_site' => [
         'images' => ['logo'],
-        'stringfields' => ['logo_descr', 'phone', 'map_link', 'copy', 'tell_everyone']
+        'stringfields' => ['logo_descr', 'landline_phone', 'phone', 'map_link', 'copy', 'tell_everyone']
     ],
 
     'static_about' => [
