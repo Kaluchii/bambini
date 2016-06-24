@@ -20,6 +20,11 @@ body {
 .hide-block {
 
 }
+header.header .col-1-2:first-child a {
+  position: relative;
+  width: 195px;
+  height: 73px;
+}
 @font-face {
   font-family: 'RotondaC';
   src: url('../fonts/RotondaC-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/RotondaC-Bold.otf') format('opentype'), url('../fonts/RotondaC-Bold.woff') format('woff'), url('../fonts/RotondaC-Bold.ttf') format('truetype'), url('../fonts/RotondaC-Bold.svg#RotondaC-Bold') format('svg');
@@ -33,7 +38,7 @@ body {
   font-style: normal;
 }
 header.header {
-  padding: 35px 40px 0 40px;
+  padding: 20px 40px 0 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -64,11 +69,28 @@ header.header div.col-1-2:last-child ul.head-menu {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 15px;
+  /* padding-top: 15px; */
+}
+header.header div.col-1-2:last-child ul.head-menu ul.phones {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+header.header div.col-1-2:last-child ul.head-menu ul.phones li.item {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 30px;
+  font-size: 16px;
+}
+header.header div.col-1-2:last-child ul.head-menu ul.phones li.item:first-child {
+  margin: 3px 0 -45px 30px;
 }
 header.header div.col-1-2:last-child ul.head-menu li.item {
   margin-left: 30px;
   font-size: 18px;
+  margin-bottom: -15px;
 }
 header.header div.col-1-2:last-child ul.head-menu li.item a {
   font-size: 14px;
@@ -94,6 +116,10 @@ header.header div.col-1-2:last-child ul.head-menu li.item a:hover {
   background-position: 0 99%;
   background-size: 10px 1px;
   background-repeat: repeat-x;
+}
+img.logo {
+  position: absolute;
+  top: 15px;
 }
 nav.main-menu {
   width: 1000px;
