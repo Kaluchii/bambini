@@ -66,7 +66,7 @@ $b = true?>
                 <div class="watch">
                     <p>Смотрите так же</p>
                     <ul class="program-link-block">
-                        @foreach($programs->upgrade_program_group as $program)
+                        @foreach($programs as $program)
                             <li class="item-links"><a href="{{$program->slug_field}}">{{$program->name_field}}</a></li>
                         @endforeach
                     </ul>
