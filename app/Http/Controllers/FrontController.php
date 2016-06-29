@@ -50,8 +50,7 @@ class FrontController extends Controller
         try{
             $item = $this->queryAgent->getGroupItemBySlug('dom_upgrade', 'upgrade_programs', $slug);
             $educators = $this->queryAgent->getBlock('dom_staff', [], []);
-            //$programs = $this->queryAgent->getGroupFlat('dom_target_upgrade','upgrade_program',['upgrade_program'=>['random' => 'DESC']],[],['upgrade_program'=>['take'=>7, 'skip'=>1]]);
-            $programs = $this->queryAgent->getBlock('dom_target_upgrade', [], []);
+            $programs = $this->queryAgent->getGroupFlat('dom_target_upgrade','upgrade_program',['upgrade_program'=>['random' => 'DESC']],[],['upgrade_program'=>['take'=>7, 'skip'=>1]]);
 
             return view('front/programs/program', [
                 'educators' => $educators,
@@ -65,8 +64,7 @@ class FrontController extends Controller
             try{
                 $item = $this->queryAgent->getGroupItemBySlug('dom_target_upgrade', 'upgrade_program', $slug);
                 $educators = $this->queryAgent->getBlock('dom_staff', [], []);
-                //$programs = $this->queryAgent->getGroupFlat('dom_target_upgrade','upgrade_program',['upgrade_program'=>['random' => 'DESC']],[],['upgrade_program'=>['take'=>7, 'skip'=>1]]);
-                $programs = $this->queryAgent->getBlock('dom_target_upgrade', [], []);
+                $programs = $this->queryAgent->getGroupFlat('dom_target_upgrade','upgrade_program',['upgrade_program'=>['random' => 'DESC']],[],['upgrade_program'=>['take'=>7, 'skip'=>1]]);
 
                 return view('front/programs/program', [
                     'educators' => $educators,
