@@ -895,9 +895,10 @@ section.content .teacher-block {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  padding-left: 50px;
+  justify-content: flex-start;
   padding-top: 40px;
+  margin: 0 auto;
+  width: 750px;
 }
 section.content .teacher-block .col-1-2:first-child {
   padding-right: 50px;
@@ -921,6 +922,7 @@ section.content .teacher-block .col-1-2:last-child p.content-title {
 section.content .teacher-block .col-1-2:last-child .text-block {
   max-width: 450px;
   margin-top: 25px;
+  margin: 25px 0;
 }
 section.content .teacher-block .col-1-2:last-child .text-block h4 {
   font-size: 18px;
