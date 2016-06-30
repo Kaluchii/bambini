@@ -1166,3 +1166,12 @@ section.content .head-block .photo-wrap .col-1-2:first-child{
 .text-block ul {
   padding-left: 20px;
 }
+
+section.content .text-block a:hover img {
+  border: 2px solid #339900;
+  padding: 0;
+}
+
+section.content .text-block a img {
+  padding: 2px;
+}
