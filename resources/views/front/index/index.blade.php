@@ -38,7 +38,7 @@
                             <div class="wrap">
                                 <img src="/images/{{$item->upgrade_program_image->primary_link}}" alt="" class="program-title">
                             </div>
-                            <p class={{"title-".$j}}>{{$item->program_name_field}}</p>
+                            <p class={{"title-".$j}}>{!! $item->program_name_field !!}</p>
                         </a>
                         <div class="about-program">{!! $item->preview_descr_field !!}</div>
                     </div>
