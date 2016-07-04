@@ -134,7 +134,7 @@ nav.main-menu ul.menu {
   -ms-flex-pack: center;
   justify-content: center;
   padding-top: 60px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 nav.main-menu ul.menu li.menu-item {
   margin: 0 25px;
