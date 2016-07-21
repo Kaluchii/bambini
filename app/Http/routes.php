@@ -39,11 +39,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
 
 });
 
-//Route::get('/', 'WelcomeController@index');
 
 Route::get('/',                       'FrontController@getIndex');
-Route::get('/programs',               'FrontController@getPrograms');
-Route::get('/educators',              'FrontController@getEducators');
-Route::get('/contacts',               'FrontController@getContacts');
 
-Route::get('/programs/{slug}',        'FrontController@getProgramsItem');
+Route::get('/{slug}',                 'FrontController@getAnything');
