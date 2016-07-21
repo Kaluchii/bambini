@@ -19,6 +19,21 @@ class FrontController extends Controller
     }
 
 
+    public function getAnything($slug)
+    {
+        switch ($slug) {
+            case 'new':         return redirect('/'); break;
+            case 'about':       return redirect('/'); break;
+            case 'vacancies':   return redirect('/'); break;
+            case 'photo':       return redirect('/'); break;
+            case 'programs':    return $this->getPrograms(); break;
+            case 'pedagogi':    return $this->getEducators(); break;
+            case 'contacts':    return $this->getContacts(); break;
+            default:    return $this->getProgramsItem($slug);
+        }
+    }
+
+
     public function getIndex()
     {
         $about = $this->queryAgent->getBlock('static_about', [], []);
@@ -50,7 +65,6 @@ class FrontController extends Controller
         try{
             $item = $this->queryAgent->getGroupItemBySlug('dom_upgrade', 'upgrade_programs', $slug);
             $educators = $this->queryAgent->getBlock('dom_staff', [], []);
-            //$programs = $this->queryAgent->getGroupFlat('dom_target_upgrade','upgrade_program',['upgrade_program'=>['random' => 'DESC']],[],['upgrade_program'=>['take'=>7, 'skip'=>1]]);
             $programs = $this->queryAgent->getBlock('dom_target_upgrade', [], []);
 
             return view('front/programs/program', [
@@ -65,7 +79,6 @@ class FrontController extends Controller
             try{
                 $item = $this->queryAgent->getGroupItemBySlug('dom_target_upgrade', 'upgrade_program', $slug);
                 $educators = $this->queryAgent->getBlock('dom_staff', [], []);
-                //$programs = $this->queryAgent->getGroupFlat('dom_target_upgrade','upgrade_program',['upgrade_program'=>['random' => 'DESC']],[],['upgrade_program'=>['take'=>7, 'skip'=>1]]);
                 $programs = $this->queryAgent->getBlock('dom_target_upgrade', [], []);
 
                 return view('front/programs/program', [
@@ -77,14 +90,9 @@ class FrontController extends Controller
                 ]);
             }
             catch (\Exception $exception){
-                echo 'Не найдена страница';
+                abort(404);
             }
         }
-        //finally {
-        //    return view('front/programs/program', [
-        //        'item' => $item
-        //    ]);
-        //}
     }
 
 
