@@ -34,7 +34,7 @@
                 @foreach($programs->upgrade_programs_group as $item)
                     <?php $j++ ?>
                     <div class="col-1-3">
-                        <a href="/programs/{{$item->slug_field}}">
+                        <a href="/{{$item->slug_field}}">
                             <div class="wrap">
                                 <img src="/images/{{$item->upgrade_program_image->primary_link}}" alt="" class="program-title">
                             </div>
@@ -56,7 +56,7 @@
                         <div class="about-program">{!! $item->type_descr_field !!}</div>
                         <ul class="program-link-block">
                             @foreach($item->upgrade_program_group as $field)
-                                <li class="item-links"><a href="/programs/{{$field->slug_field}}">{{$field->program_name_field}}</a> {{$field->program_name_descr_field}}</li>
+                                <li class="item-links"><a href="/{{$field->slug_field}}">{{$field->program_name_field}}</a> {{$field->program_name_descr_field}}</li>
                             @endforeach
                         </ul>
                     </div>
