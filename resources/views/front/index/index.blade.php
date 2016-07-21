@@ -72,7 +72,7 @@
                         <div class="text">{!! $item->feature_descr_field !!}</div>
                         <?php $c++ ?>
                         @if($c == 4)
-                            <p><a href="/educators">Педагоги «Bambini»</a></p>
+                            <p><a href="/pedagogi">Педагоги «Bambini»</a></p>
                         @endif
                     </li>
                 @endforeach
