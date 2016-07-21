@@ -43,7 +43,7 @@
                                         <?php $b = false ?>
                                     @endif
                                     <li class="item"><a
-                                                href="/programs/{{$program->slug_field}}">{{$program->program_name_field}}</a>
+                                                href="/{{$program->slug_field}}">{{$program->program_name_field}}</a>
                                     </li>
                                 @endif
                             @endforeach
