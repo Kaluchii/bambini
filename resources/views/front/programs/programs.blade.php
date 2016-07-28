@@ -34,7 +34,7 @@
                         <div class="about-program">{!! $item->type_descr_field !!}</div>
                         <ul class="program-link-block">
                             @foreach($item->upgrade_program_group as $field)
-                                <li class="item-links"><a href="/{$field->slug_field}}">{{$field->program_name_field}}</a> {{$field->program_name_descr_field}}</li>
+                                <li class="item-links"><a href="/{{$field->slug_field}}">{{$field->program_name_field}}</a> {{$field->program_name_descr_field}}</li>
                             @endforeach
                         </ul>
                     </div>
