@@ -51,7 +51,7 @@ $b = true?>
                 @if ($item->educator_id->count)
                 <div class="teacher">
                     @foreach($educators->staff_list_group as $edu)
-                        @foreach($item->educator_id as $educ_id)
+                        @foreach($item->$educator_id as $educ_id)
                             @if($edu->id_field == $educ_id->educator_id_field)
                                 @if($b)
                                     <h2>Программу ведут</h2>
