@@ -48,7 +48,7 @@ $b = true?>
                 </div>
             </div>
             <div class="col-1-2">
-                @if ($item->educator_id->count)
+                @if ($item->$educator_id->count)
                 <div class="teacher">
                     @foreach($educators->staff_list_group as $edu)
                         @foreach($item->$educator_id as $educ_id)
