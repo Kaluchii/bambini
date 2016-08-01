@@ -770,6 +770,7 @@ section.content .content-block .col-1-2:last-child .teacher h2 {
   font-family: "RotondaC";
   font-size: 24px;
   color: #339900;
+  margin-top: 40px;
   margin-bottom: 35px;
 }
 section.content .content-block .col-1-2:last-child .teacher img {
@@ -905,7 +906,7 @@ section.content .teacher-block .col-1-2:last-child h2.name {
   font-family: RotondaC;
   font-size: 32px;
   margin-top: 0;
-  line-height: 28px;
+  line-height: 1.5;
 }
 section.content .teacher-block .col-1-2:last-child p.prof {
   color: #999999;
