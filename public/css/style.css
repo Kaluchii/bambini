@@ -727,6 +727,9 @@ section.content .content-block .col-1-2:first-child .text-block p {
   color: #666666;
   line-height: 24px;
 }
+section.content .content-block .col-1-2:first-child .text-block > p:first-child {
+  margin-top: 25px;
+}
 section.content .content-block .col-1-2:first-child .text-block h2 {
   font-family: "RotondaC";
   font-size: 24px;
