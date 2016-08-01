@@ -770,6 +770,9 @@ section.content .content-block .col-1-2:last-child .teacher h2 {
   margin-top: 40px;
   margin-bottom: 35px;
 }
+section.content .content-block .col-1-2:last-child .teacher {
+  margin-bottom: 50px;
+}
 section.content .content-block .col-1-2:last-child .teacher img {
   margin-bottom: 25px;
 }
@@ -782,7 +785,7 @@ section.content .content-block .col-1-2:last-child .teacher p.prof {
   color: #666666;
 }
 section.content .content-block .col-1-2:last-child .watch {
-  margin-top: 75px;
+  margin-top: 25px;
 }
 section.content .content-block .col-1-2:last-child .watch p {
   font-weight: bold;
@@ -840,7 +843,6 @@ section.content .head-title h1 {
 }
 section.content .text-block {
   width: 800px;
-  margin: 0 auto;
   margin-top: 25px;
 }
 section.content .text-block h4 {
