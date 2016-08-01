@@ -763,9 +763,6 @@ section.content .content-block .col-1-2:first-child .buttons-block button.join:h
   cursor: pointer;
   background: #f24a00;
 }
-section.content .content-block .col-1-2:last-child .teacher {
-  margin-bottom: 75px;
-}
 section.content .content-block .col-1-2:last-child .teacher h2 {
   font-family: "RotondaC";
   font-size: 24px;
@@ -783,6 +780,9 @@ section.content .content-block .col-1-2:last-child .teacher p.name {
 }
 section.content .content-block .col-1-2:last-child .teacher p.prof {
   color: #666666;
+}
+section.content .content-block .col-1-2:last-child .watch {
+  margin-top: 75px;
 }
 section.content .content-block .col-1-2:last-child .watch p {
   font-weight: bold;
