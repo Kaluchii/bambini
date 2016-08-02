@@ -714,6 +714,7 @@ section.content .content-block .col-1-2:first-child {
 }
 section.content .content-block .col-1-2:first-child .text-block {
   width: 500px;
+  margin-left: 0;
 }
 section.content .content-block .col-1-2:first-child .text-block h4 {
   font-size: 18px;
@@ -849,6 +850,7 @@ section.content .head-title h1 {
 }
 section.content .text-block {
   width: 800px;
+  margin: 0 auto;
   margin-top: 25px;
 }
 section.content .text-block h4 {
