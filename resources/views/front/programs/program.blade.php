@@ -82,6 +82,6 @@ $b = true?>
             <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir" data-counter=""></div>
         </div>
     </section>
-    @include('front.programs.footer')
+    @include('front.footer')
     @yield('footer')
 @endsection

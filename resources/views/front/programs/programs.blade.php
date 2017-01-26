@@ -42,6 +42,6 @@
             </div>
         </div>
     </section>
-    @include('front.programs.footer')
+    @include('front.footer')
     @yield('footer')
 @endsection

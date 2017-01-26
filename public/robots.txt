@@ -1,2 +1,8 @@
 User-agent: *
 Disallow:
+
+User-agent: Yandex
+Disallow:
+
+Host: club-bambini.kz
+Sitemap: http://club-bambini.kz/sitemap.xml

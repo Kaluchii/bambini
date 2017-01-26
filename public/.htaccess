@@ -1,9 +1,13 @@
 <IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews
-    </IfModule>
 
-    RewriteEngine On
+Options +FollowSymLinks
+Options -Indexes
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www.club-bambini.kz$ [NC]
+RewriteRule ^(.*)$ http://club-bambini.kz/$1 [L,R=301]
+
 
     # Redirect Trailing Slashes...
     RewriteRule ^(.*)/$ /$1 [L,R=301]
