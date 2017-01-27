@@ -27,6 +27,7 @@ class FrontController extends Controller
             case 'vacancies':   return redirect('/'); break;
             case 'photo':       return redirect('/'); break;
             case 'programs':    return $this->getPrograms(); break;
+            case 'raspisanie':  return $this->getSchedule(); break;
             case 'pedagogi':    return $this->getEducators(); break;
             case 'contacts':    return $this->getContacts(); break;
             default:    return $this->getProgramsItem($slug);
@@ -108,6 +109,11 @@ class FrontController extends Controller
         ]);
     }
 
+    public function getSchedule()
+    {
+        return view('front/schedule/schedule', [
+        ]);
+    }
 
     public function getContacts()
     {

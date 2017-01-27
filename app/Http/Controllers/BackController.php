@@ -51,6 +51,12 @@ class BackController extends Controller
 		]);
 	}
 
+    public function getSchedule(){
+        $all =  $this->queryAgent->getBlock('schedule',[],[]);
+        return view('back.blocks.schedule',[
+            'schedule' => $all,
+        ]);
+    }
 
 	public function getPrograms(){
 		$all =  $this->queryAgent->getBlock('dom_upgrade',[],[]);

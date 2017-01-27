@@ -2,6 +2,7 @@
     <nav class="main-menu">
         <ul class="menu">
             <li class="menu-item"><a href="/">О клубе</a></li>
+            <li class="menu-item"><a href="/raspisanie">Расписание</a></li>
             <li class="menu-item"><a href="/programs">Развивающие программы</a></li>
             <li class="menu-item active"><a href="/pedagogi">Педагоги</a></li>
             <li class="menu-item"><a href="/contacts">Контакты</a></li>

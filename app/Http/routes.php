@@ -27,6 +27,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
 	Route::get('/edit/about',                    'BackController@getAbout');
 	Route::get('/edit/gallery',                  'BackController@getGallery');
 	Route::get('/edit/programs',                 'BackController@getPrograms');
+	Route::get('/edit/schedule',                 'BackController@getSchedule');
 	Route::get('/edit/type',                     'BackController@getType');
 	Route::get('/edit/educators',                'BackController@getEducators');
 	Route::get('/edit/contact',                  'BackController@getContact');

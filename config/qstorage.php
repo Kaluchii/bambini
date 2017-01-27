@@ -86,6 +86,17 @@ return [
         ]
     ],
 
+    'schedule' => [
+        'title' => 'Расписание',
+        'groups'=> [
+            'staff_list' => [
+                'images' => ['face'],
+                'stringfields' => ['name', 'dolzhnost'],
+                'textfields' => ['descr']
+            ]
+        ]
+    ],
+
     'dom_all_images' => [
         'groups' => [
             'images_set' => [
