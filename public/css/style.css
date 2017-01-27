@@ -1200,3 +1200,75 @@ section.content .text-block a:hover img {
 section.content .text-block a img {
   padding: 2px;
 }
+.table-head {display: flex;background: url('/img/arrow.png') no-repeat bottom;padding-bottom: 30px;margin-top: 70px;}
+
+.schedule .block {
+  padding: 0 112px;
+}
+
+.table-head .col-1-2 {
+  font-size: 24px;
+  font-family: RotondaC;
+  font-weight: bold;
+  color: #333333;
+}
+
+.schedule .block .col-1-2:first-child {
+  width: 47%;
+}
+.schedule .block  .col-1-2:last-child {
+  width: 54%;
+}
+
+.table-body a.link {
+  display: inline;
+  height: auto;
+  font-size: 16px;
+  color: #0099cc;
+  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#b2e0f0), to(#b2e0f0));
+  background: -webkit-linear-gradient(to left, #b2e0f0, #b2e0f0 90%);
+  background: -webkit-gradient(linear, right top, left top, from(#b2e0f0), color-stop(90%, #b2e0f0));
+  background: -webkit-linear-gradient(right, #b2e0f0, #b2e0f0 90%);
+  background: linear-gradient(to left, #b2e0f0, #b2e0f0 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@c2', endColorstr='@c2', GradientType=0);
+  background-position: 0 99%;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+}
+.table-body a.link:hover {
+  color: #339900;
+  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#c1e0b2), to(#c1e0b2));
+  background: -webkit-linear-gradient(to left, #c1e0b2, #c1e0b2 90%);
+  background: -webkit-gradient(linear, right top, left top, from(#c1e0b2), color-stop(90%, #c1e0b2));
+  background: -webkit-linear-gradient(right, #c1e0b2, #c1e0b2 90%);
+  background: linear-gradient(to left, #c1e0b2, #c1e0b2 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@c4', endColorstr='@c4', GradientType=0);
+  background-position: 0 99%;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+}
+
+.schedule-row {
+  display: flex;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+.schedule .day {
+  color: #333;
+  font-weight: bold;
+}
+
+.schedule .table-head .delimiter {
+  font-size: inherit;
+  padding: 0 5px;
+}
+.schedule .table-body .delimiter {
+  color: #666;
+  padding: 0 5px;
+}
+.schedule .hour, .comma {
+  color: #666;
+}
+.comma:last-child {
+  display: none;
+}

@@ -111,7 +111,11 @@ class FrontController extends Controller
 
     public function getSchedule()
     {
+        $programs = $this->queryAgent->getBlock('dom_upgrade', [], []);
+        $target_programs = $this->queryAgent->getBlock('dom_target_upgrade', [], []);
         return view('front/schedule/schedule', [
+            'programs' => $programs,
+            'target_programs' => $target_programs
         ]);
     }
 

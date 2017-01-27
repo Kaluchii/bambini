@@ -49,6 +49,10 @@ return [
             'program_educators' => [
                 'owner' => 'upgrade_programs',
                 'numbs' => ['educator_id']
+            ],
+            'program_schedule' => [
+                'owner' => 'upgrade_programs',
+                'stringfields' => ['day', 'hour'],
             ]
         ]
     ],
@@ -71,23 +75,16 @@ return [
             'target_program_educators' => [
                 'owner' => 'upgrade_program',
                 'numbs' => ['educator_id']
+            ],
+            'target_program_schedule' => [
+                'owner' => 'upgrade_program',
+                'stringfields' => ['day', 'hour'],
             ]
         ],
     ],
 
     'dom_staff' => [
         'title' => 'Педагоги Bambini',
-        'groups'=> [
-            'staff_list' => [
-                'images' => ['face'],
-                'stringfields' => ['name', 'dolzhnost'],
-                'textfields' => ['descr']
-            ]
-        ]
-    ],
-
-    'schedule' => [
-        'title' => 'Расписание',
         'groups'=> [
             'staff_list' => [
                 'images' => ['face'],

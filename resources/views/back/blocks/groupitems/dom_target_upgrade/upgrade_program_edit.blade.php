@@ -38,6 +38,18 @@
                        data-item-id="{{$item_upgrade_program->id_field}}" placeholder="Строка">
             </div>
             <div class="field-wrap ">
+                <label class="input-file">Время проведения занятия (отображается в расписании)</label>
+                <ul class="group-block group_container" data-block="dom_target_upgrade" data-group="target_program_schedule"
+                    data-owner-id="{{$item_upgrade_program->id_field}}">
+                    @foreach($item_upgrade_program->target_program_schedule_group as $schedule_item)
+                        @include('back.blocks.groupitems.dom_target_upgrade.schedule')
+                    @endforeach
+                </ul>
+                <button class="any_create" data-block="dom_target_upgrade" data-group="target_program_schedule"
+                        data-descr="Эл. первой группы" data-owner-id="{{$item_upgrade_program->id_field}}"> Добавить
+                </button>
+            </div>
+            <div class="field-wrap ">
                 <label class="input-file">Преподаватели программы</label>
                     <ul class="group-block group_container" data-block="dom_target_upgrade" data-group="target_program_educators"
                         data-owner-id="{{$item_upgrade_program->id_field}}">
