@@ -21,7 +21,7 @@ body {
 
 }
 header.header .col-1-2:first-child a {
-  position: relative;
+  /* position: relative; */
   width: 195px;
   height: 73px;
 }
@@ -38,7 +38,7 @@ header.header .col-1-2:first-child a {
   font-style: normal;
 }
 header.header {
-  padding: 20px 40px 0 40px;
+  padding: 35px 40px 0 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -53,47 +53,42 @@ header.header div.col-1-2 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-header.header div.col-1-2:first-child p.text {
-  color: #666666;
-  padding-left: 20px;
-  padding-top: 10px;
-  font-size: 14px;
-}
-header.header div.col-1-2:last-child ul.head-menu {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  /* padding-top: 15px; */
-}
-header.header div.col-1-2:last-child ul.head-menu ul.phones {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   flex-direction: column;
+  /* -webkit-box-align: center; */
+  /* -webkit-align-items: center; */
+  -ms-flex-align: center;
+  /* align-items: center; */
 }
-header.header div.col-1-2:last-child ul.head-menu ul.phones li.item {
-  display: flex;
-  justify-content: flex-end;
-  margin-left: 30px;
-  font-size: 16px;
+header.header div.col-1-2 p.text {
+  color: #999999;
+  position: relative;
+  width: 105px;
+  line-height: 1.5;
+  top: -15px;
 }
-header.header div.col-1-2:last-child ul.head-menu ul.phones li.item:first-child {
-  margin: 3px 0 -45px 30px;
+header.header div.col-1-2 {
+  /*   display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; */
 }
-header.header div.col-1-2:last-child ul.head-menu li.item {
-  margin-left: 30px;
-  font-size: 18px;
-  margin-bottom: -15px;
+header.header div.col-1-2 .item {
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  text-align: right;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #666666;
+  /* margin-left: 30px; */
+  /*   font-size: 16px; */
 }
-header.header div.col-1-2:last-child ul.head-menu li.item a {
-  font-size: 14px;
+header.header div.col-1-2 .item:first-child {
+  /* margin-left: 30px; */
+  /* margin-bottom: -15px; */
+  margin-top: 15px;
+}
+header.header div.col-1-2 .item a {
+  /* font-size: 14px; */
   color: #0099cc;
   background: -webkit-gradient(to linear, 0 0, 90% 0, from(#b2e0f0), to(#b2e0f0));
   background: -webkit-linear-gradient(to left, #b2e0f0, #b2e0f0 90%);
@@ -105,7 +100,7 @@ header.header div.col-1-2:last-child ul.head-menu li.item a {
   background-size: 10px 1px;
   background-repeat: repeat-x;
 }
-header.header div.col-1-2:last-child ul.head-menu li.item a:hover {
+header.header div.col-1-2 .item a:hover {
   color: #339900;
   background: -webkit-gradient(to linear, 0 0, 90% 0, from(#c1e0b2), to(#c1e0b2));
   background: -webkit-linear-gradient(to left, #c1e0b2, #c1e0b2 90%);
@@ -118,8 +113,8 @@ header.header div.col-1-2:last-child ul.head-menu li.item a:hover {
   background-repeat: repeat-x;
 }
 img.logo {
-  position: absolute;
-  top: 15px;
+  /* position: absolute; */
+  /* top: 15px; */
 }
 nav.main-menu {
   width: 1000px;
@@ -133,7 +128,7 @@ nav.main-menu ul.menu {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-top: 55px;
+  padding-top: 40px;
   padding-bottom: 0;
 }
 nav.main-menu ul.menu li.menu-item {
@@ -169,7 +164,7 @@ nav.main-menu ul.menu li.menu-item a:hover {
 nav.main-menu ul.menu li.menu-item.active {
   background: #8fc644;
   border-radius: 16px;
-  padding: 5px 12px;
+  padding: 5px 12px 3px;
   margin: 0 13px;
 }
 nav.main-menu ul.menu li.menu-item.active a {
@@ -912,28 +907,23 @@ section.content .teacher-block {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: flex-start;
-  padding-top: 40px;
+  padding-top: 35px;
   margin: 0 auto;
-  width: 750px;
+  width: 770px;
 }
 section.content .teacher-block .col-1-2:first-child {
   padding-right: 50px;
+  padding-left: 15px;
 }
 section.content .teacher-block .col-1-2:last-child h2.name {
   color: #339900;
   font-family: RotondaC;
   font-size: 32px;
   margin-top: 0;
-  line-height: 1.5;
 }
 section.content .teacher-block .col-1-2:last-child p.prof {
   color: #999999;
-  margin-top: 15px;
-}
-section.content .teacher-block .col-1-2:last-child p.content-title {
-  color: #333333;
-  font-weight: bold;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 section.content .teacher-block .col-1-2:last-child .text-block {
   max-width: 450px;

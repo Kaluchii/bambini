@@ -11,12 +11,14 @@
             <?php $b = true ?>
             <div class="teacher-block">
                 <div class="col-1-2">
-                    <img src="/images/{{$edu->face_image->primary_link}}" alt="" class="photo">
+                    {{--<img src="/images/{{$edu->face_image->primary_link}}" alt="" class="photo">--}}
+                    <img src="/img/placeholder.jpg" alt="" class="photo">
                 </div>
                 <div class="col-1-2">
-                    <h2 class="name">{{$edu->name_field}}</h2>
-                    <p class="prof">{{$edu->dolzhnost_field}}</p>
-                    <p class="content-title">Профессиональное резюме</p>
+                    {{--<h2 class="name">{{$edu->name_field}}</h2>
+                    <p class="prof">{{$edu->dolzhnost_field}}</p>--}}
+                    <h2 class="name">Городецкая Ольга Игоревна</h2>
+                    <p class="prof">Логопед-дефектолог русского и казахского языка</p>
                     <div class="text-block">{!! $edu->descr_field !!}</div>
                     @foreach($upgrade->upgrade_programs_group as $program)
                         @foreach($program->program_educators_group as $program_id)
