@@ -3,7 +3,8 @@
    return
        [
            'upgrade_programs' => [],
-           'upgrade_program' => []
+           'upgrade_program' => [],
+           'staff_list' => [],
 
       ];
 

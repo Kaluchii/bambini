@@ -80,6 +80,19 @@ return [
             ['width' => 100, 'height' => null, 'sufix' => 'icon'],
         ]
     ],
+    'staff_list_cert_preview' => [
+        'sizes' => [
+            ['width' => 120, 'height' => 170, 'sufix' => 'primary'],
+            ['width' => 100, 'height' => null, 'sufix' => 'preview'],
+        ]
+    ],
+    'staff_certs_cert' => [
+        'sizes' => [
+            ['width' => null, 'height' => 600, 'sufix' => 'primary'],
+            ['width' => 100, 'height' => null, 'sufix' => 'preview'],
+            ['width' => 260, 'height' => null, 'sufix' => 'icon'],
+        ]
+    ],
     'images_set_text_pict' => [
         'sizes' => []
     ],

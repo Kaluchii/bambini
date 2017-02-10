@@ -3,9 +3,9 @@
         <label class="group-title">
             Особенность
         </label>
-        <button type="button" class="any_delete" data-block="static_about" data-group="features" data-entity="groupitem"
+        {{--<button type="button" class="any_delete" data-block="static_about" data-group="features" data-entity="groupitem"
                 data-item-id="{{$item_features->id_field}}" data-descr="Эл. первой группы"> Удалить
-        </button>
+        </button>--}}
     </div>
     <div class="block ">
         <div class="field-wrap ">

@@ -100,6 +100,13 @@ class BackController extends Controller
 		]);
 	}
 
+    public function getEducatorsItem($id){
+        $item =  $this->queryAgent->getGroupItem('dom_staff','staff_list',$id);
+        return view('back.blocks.groupitems.dom_staff.staff_list_edit',[
+            'item_staff_list' => $item,
+        ]);
+    }
+
 
 	public function editType($id){
 		$item =  $this->queryAgent->getGroupItem('dom_target_upgrade','upgrade_program',$id);

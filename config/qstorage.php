@@ -87,9 +87,13 @@ return [
         'title' => 'Педагоги Bambini',
         'groups'=> [
             'staff_list' => [
-                'images' => ['face'],
+                'images' => ['face', 'cert_preview'],
                 'stringfields' => ['name', 'dolzhnost'],
-                'textfields' => ['descr']
+                'textfields' => ['preview_descr', 'descr']
+            ],
+            'staff_certs' => [
+                'owner' => 'staff_list',
+                'images' => ['cert'],
             ]
         ]
     ],

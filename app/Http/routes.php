@@ -36,6 +36,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
 
 	Route::get('/edit/upgrade_programs/{id}',    'BackController@editProgram');
 	Route::get('/edit/upgrade_program/{id}',     'BackController@editType');
+    Route::get('/edit/educators/{id}',           'BackController@getEducatorsItem');
 
 
 });

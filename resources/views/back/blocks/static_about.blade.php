@@ -127,9 +127,9 @@
                         @include('back.blocks.groupitems.static_about.features')
                     @endforeach
                 </ul>
-                <button class="any_create" data-block="static_about" data-group="features"
+                {{--<button class="any_create" data-block="static_about" data-group="features"
                         data-descr="Эл. первой группы" data-owner-id="0"> Добавить
-                </button>
+                </button>--}}
         </div>
         <div class="field-wrap buttons">
             <button class="btn btn-primary pull-right any_save" data-block="static_about" data-entity="block"

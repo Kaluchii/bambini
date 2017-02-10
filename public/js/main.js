@@ -20,6 +20,10 @@ $(document).ready(function(){
         return false;
     });
 
+    $('.expand').on('click', function () {
+        var par = $(this).closest('.col-1-2');
+        var text = par.find('.more-text').slideToggle('fast');
+    });
 
 
     $('.ask').magnificPopup({
