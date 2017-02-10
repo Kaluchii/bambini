@@ -95,7 +95,7 @@
                     @endforeach
                 </ul>
                 <button class="any_create" data-block="dom_upgrade" data-group="program_schedule"
-                        data-descr="Эл. первой группы" data-owner-id="{{$item_upgrade_programs->id_field}}"> Добавить
+                        data-descr="Эл. первой группы" data-owner-id="{{$item_upgrade_programs->id_field}}"> Добавить день недели
                 </button>
             </div>
             <div class="field-wrap ">
@@ -107,7 +107,7 @@
                         @endforeach
                     </ul>
                     <button class="any_create" data-block="dom_upgrade" data-group="program_educators"
-                            data-descr="Эл. первой группы" data-owner-id="{{$item_upgrade_programs->id_field}}"> Добавить
+                            data-descr="Эл. первой группы" data-owner-id="{{$item_upgrade_programs->id_field}}"> Добавить преподавателя
                     </button>
             </div>
             <div class="field-wrap ">
@@ -135,7 +135,7 @@
                 @endforeach
             </ul>
             <button class="any_create" data-block="dom_upgrade" data-group="program_gallery"
-                    data-descr="Эл. первой группы" data-owner-id="{{$item_upgrade_programs->id_field}}"> Добавить
+                    data-descr="Эл. первой группы" data-owner-id="{{$item_upgrade_programs->id_field}}"> Добавить фото
             </button>
             <div class="field-wrap buttons">
                 <button type="button" class="any_save" data-block="dom_upgrade" data-group="upgrade_programs"

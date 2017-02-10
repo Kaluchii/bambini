@@ -46,7 +46,7 @@
                     @endforeach
                 </ul>
                 <button class="any_create" data-block="dom_target_upgrade" data-group="target_program_schedule"
-                        data-descr="Эл. первой группы" data-owner-id="{{$item_upgrade_program->id_field}}"> Добавить
+                        data-descr="Эл. первой группы" data-owner-id="{{$item_upgrade_program->id_field}}"> Добавить день недели
                 </button>
             </div>
             <div class="field-wrap ">
@@ -58,7 +58,7 @@
                         @endforeach
                     </ul>
                     <button class="any_create" data-block="dom_target_upgrade" data-group="target_program_educators"
-                            data-descr="Эл. первой группы" data-owner-id="{{$item_upgrade_program->id_field}}"> Добавить
+                            data-descr="Эл. первой группы" data-owner-id="{{$item_upgrade_program->id_field}}"> Добавить преподавателя
                     </button>
             </div>
             <div class="field-wrap ">
@@ -83,7 +83,7 @@
                 @endforeach
             </ul>
             <button class="any_create" data-block="dom_target_upgrade" data-group="program_gall"
-                    data-descr="Эл. первой группы" data-owner-id="{{$item_upgrade_program->id_field}}"> Добавить
+                    data-descr="Эл. первой группы" data-owner-id="{{$item_upgrade_program->id_field}}"> Добавить фото
             </button>
         </div>
 @endsection

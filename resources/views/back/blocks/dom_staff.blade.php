@@ -13,8 +13,8 @@
                 <tr>
                     <td>Название</td>
                     <td></td>
-                    <td>Публикации</td>
-                    <td>Сортировка</td>
+                    {{--<td>Публикации</td>
+                    <td>Сортировка</td>--}}
                     <td>Редактировать</td>
                     <td>Удалить</td>
                 </tr>
@@ -29,8 +29,8 @@
                 <tr>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    {{--<td></td>
+                    <td></td>--}}
                     <td></td>
                     <td>
                         <button class="any_create" data-block="dom_staff" data-group="staff_list"

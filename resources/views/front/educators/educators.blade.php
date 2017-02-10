@@ -12,23 +12,34 @@
             <div class="teacher-block">
                 <div class="row-1-2">
                     <div class="col-1-2">
-                        {{--<img src="/images/{{$edu->face_image->primary_link}}" alt="" class="photo">--}}
-                        <img src="/img/placeholder.jpg" alt="" class="photo">
+                        <img src="/images/{{$edu->face_image->primary_link}}" alt="" class="photo">
+                        {{--<img src="/img/placeholder.jpg" alt="" class="photo">--}}
                     </div>
                     <div class="col-1-2">
                         {{--<h2 class="name">{{$edu->name_field}}</h2>
                         <p class="prof">{{$edu->dolzhnost_field}}</p>--}}
-                        <h2 class="name">Городецкая Ольга Игоревна</h2>
-                        <p class="prof">Логопед-дефектолог русского и казахского языка</p>
-                        <div class="text-block">{!! $edu->descr_field !!}</div>
-                        <div class="text-block more-text"><p>Скрытый текст</p></div>
+                        <h2 class="name">{{$edu->name_field}}</h2>
+                        <p class="prof">{{$edu->dolzhnost_field}}</p>
+                        <div class="text-block">{!! $edu->preview_descr_field !!}</div>
+                        <div class="text-block more-text">{!! $edu->descr_field !!}</div>
                         <div class="more"><a class="expand">Подробнее</a></div>
                     </div>
                 </div>
                 <div class="row-1-2">
                     <div class="col-1-2">
-                        <a href="" class="sert-img"><img src="/img/sert-place.png" alt=""></a>
-                        <div class="sert-row"><a href="" class="serts">Сертификаты и дипломы</a></div>
+                        <div class="overlay">
+                            <div class="certs_gallery">
+                                @foreach($edu->staff_certs_group as $item)
+                                    <a href="/images/{{$edu->face_image->primary_link}}"></a>
+                                @endforeach
+                                    <a href="/img/1gg.jpg"></a>
+                                    <a href="/img/2gg.jpg"></a>
+                                    <a href="/img/3gg.jpg"></a>
+                            </div>
+                        </div>
+                        <a href="/img/1gg.jpg" class="sert-img call_certs"><img src="/img/sert-place.png" alt=""></a>
+                        {{--<a href="" class="sert-img"><img src="/images/{{$edu->cert_preview_image->primary_link}}" alt=""></a>--}}
+                        <div class="sert-row"><a href="/img/1gg.jpg" class="serts call_certs">Сертификаты и дипломы</a></div>
                     </div>
                     <div class="col-1-2">
                         @foreach($upgrade->upgrade_programs_group as $program)

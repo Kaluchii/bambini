@@ -74,7 +74,7 @@ return [
     ],
     'staff_list_face' => [
         'sizes' => [
-            ['width' => null, 'height' => 290, 'sufix' => 'primary'],
+            ['width' => 290, 'height' => 290, 'sufix' => 'primary'],
             ['width' => null, 'height' => 130, 'sufix' => 'secondary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
             ['width' => 100, 'height' => null, 'sufix' => 'icon'],
@@ -90,7 +90,6 @@ return [
         'sizes' => [
             ['width' => null, 'height' => 600, 'sufix' => 'primary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
-            ['width' => 260, 'height' => null, 'sufix' => 'icon'],
         ]
     ],
     'images_set_text_pict' => [

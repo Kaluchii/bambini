@@ -18,7 +18,7 @@
                     @endforeach
                 </ul>
                 <button class="any_create" data-block="static_good_atm" data-group="good_atm_gallery"
-                        data-descr="Эл. первой группы" data-owner-id="0"> Добавить
+                        data-descr="Эл. первой группы" data-owner-id="0"> Добавить фото
                 </button>
         </div>
         <div class="field-wrap buttons">

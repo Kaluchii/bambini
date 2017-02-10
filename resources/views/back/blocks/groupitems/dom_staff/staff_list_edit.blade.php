@@ -150,15 +150,20 @@
                     </div>
                 </div>
             </div>
-            <ul class="group-block group_container" data-block="dom_staff" data-group="staff_list"
-                data-owner-id="{{$item_staff_list->id_field}}">
-                @foreach($item_staff_list->staff_certs_group as $item_staff_certs )
-                    @include('back.blocks.groupitems.dom_staff.staff_certs')
-                @endforeach
-            </ul>
-            <button class="any_create" data-block="dom_staff" data-group="staff_certs" data-descr="Эл. первой группы"
-                    data-owner-id="{{$item_staff_list->id_field}}"> Добавить сертификат
-            </button>
+            <div class="field-wrap ">
+                <label class="input-file">
+                    Сертификаты преподавателя
+                </label>
+                <ul class="group-block group_container" data-block="dom_staff" data-group="staff_list"
+                    data-owner-id="{{$item_staff_list->id_field}}">
+                    @foreach($item_staff_list->staff_certs_group as $item_staff_certs )
+                        @include('back.blocks.groupitems.dom_staff.staff_certs')
+                    @endforeach
+                </ul>
+                <button class="any_create" data-block="dom_staff" data-group="staff_certs" data-descr="Эл. первой группы"
+                        data-owner-id="{{$item_staff_list->id_field}}"> Добавить сертификат
+                </button>
+            </div>
         </div>
     </li>
 @endsection

@@ -1,7 +1,7 @@
 <tr data-sorter="{{$item_staff_list->sorter_field}}" data-id="{{$item_staff_list->id_field}}">
     <td><a href="">{{$item_staff_list->name_field}}</a></td>
     <td></td>
-    <td>
+    {{--<td>
         <select class="publicated">
             @if( $item_staff_list->show_field)
                 <option value="true" selected> Опубликовано</option>
@@ -17,7 +17,7 @@
             <div class="up-button"></div>
             <div class="down-button"></div>
         </div>
-    </td>
+    </td>--}}
     <td><a href="/adm/edit/educators/{{$item_staff_list->id_field}}">Редактировать</a></td>
     <td>
         <button type="button" class="any_delete" data-block="dom_staff" data-group="staff_list" data-entity="groupitem"

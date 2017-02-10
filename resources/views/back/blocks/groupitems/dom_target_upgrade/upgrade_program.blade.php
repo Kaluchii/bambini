@@ -1,7 +1,7 @@
 <tr data-sorter="{{$item_upgrade_program->sorter_field}}" data-id="{{$item_upgrade_program->id_field}}">
     <td><a href="">{{$item_upgrade_program->name_field}}</a></td>
     <td></td>
-    <td>
+    {{--<td>
         <select class="publicated">
             @if( $item_upgrade_program->show_field)
                 <option value="true" selected> Опубликовано</option>
@@ -17,7 +17,7 @@
             <div class="up-button"></div>
             <div class="down-button"></div>
         </div>
-    </td>
+    </td>--}}
     <td><a href="/adm/edit/upgrade_program/{{$item_upgrade_program->id_field}}">Редактировать</a></td>
     <td>
         <button type="button" class="any_delete" data-block="dom_target_upgrade" data-group="upgrade_program"

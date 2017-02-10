@@ -17,10 +17,10 @@
                 <tr>
                     <td>Название</td>
                     <td></td>
-                    <td>Публикации</td>
-                    <td>Сортировка</td>
+                    {{--<td>Публикации</td>
+                    <td>Сортировка</td>--}}
                     <td>Редактировать</td>
-                    <td>Удалить</td>
+                    {{--<td>Удалить</td>--}}
                 </tr>
                 </thead>
                 <tbody class="group-block group_container" data-block="dom_upgrade" data-group="upgrade_programs"
@@ -33,14 +33,14 @@
                 <tr>
                     <td></td>
                     <td></td>
+                    {{--<td></td>
+                    <td></td>--}}
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
+                    {{--<td>
                         <button class="any_create" data-block="dom_upgrade" data-group="upgrade_programs"
                                 data-descr="Эл. первой группы" data-owner-id="0"> Добавить
                         </button>
-                    </td>
+                    </td>--}}
                 </tr>
                 </tfoot>
             </table>

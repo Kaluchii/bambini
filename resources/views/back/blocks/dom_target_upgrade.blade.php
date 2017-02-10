@@ -9,9 +9,9 @@
                         @include('back.blocks.groupitems.dom_target_upgrade.program_type')
                     @endforeach
                 </ul>
-                <button class="any_create" data-block="dom_target_upgrade" data-group="program_type"
+                {{--<button class="any_create" data-block="dom_target_upgrade" data-group="program_type"
                         data-descr="Эл. первой группы" data-owner-id="0"> Добавить
-                </button>
+                </button>--}}
         </div>
         <div class="field-wrap buttons">
             <button class="btn btn-primary pull-right any_save" data-block="dom_target_upgrade" data-entity="block"

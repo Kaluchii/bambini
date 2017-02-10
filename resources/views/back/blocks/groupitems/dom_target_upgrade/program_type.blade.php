@@ -3,10 +3,10 @@
         <label class="group-title">
             Группа программ
         </label>
-        <button type="button" class="any_delete" data-block="dom_target_upgrade" data-group="program_type"
+        {{--<button type="button" class="any_delete" data-block="dom_target_upgrade" data-group="program_type"
                 data-entity="groupitem" data-item-id="{{$item_program_type->id_field}}" data-descr="Эл. первой группы">
             Удалить
-        </button>
+        </button>--}}
     </div>
     <div class="block ">
         <div class="field-wrap ">
@@ -90,8 +90,8 @@
                 <tr>
                     <td>Название</td>
                     <td></td>
-                    <td>Публикации</td>
-                    <td>Сортировка</td>
+                    {{--<td>Публикации</td>
+                    <td>Сортировка</td>--}}
                     <td>Редактировать</td>
                     <td>Удалить</td>
                 </tr>
@@ -106,8 +106,8 @@
                 <tr>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    {{--<td></td>
+                    <td></td>--}}
                     <td></td>
                     <td>
                         <button class="any_create" data-block="dom_target_upgrade" data-group="upgrade_program"

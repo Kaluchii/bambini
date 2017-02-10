@@ -49,7 +49,7 @@
             <div class="title">
                 Управление
             </div>
-            <div class="row">
+            {{--<div class="row">
                 <label>Состояние</label>
                 <select>
                     <option value="1" selected>Text</option>
@@ -79,7 +79,7 @@
                         preview
                     </button>
                 </div>
-            </div>
+            </div>--}}
             <div class="row">
                 <div class="buttons-block two">
                     <button class="save_all">Сохранить</button>

@@ -1346,3 +1346,6 @@ section.content .text-block a img {
 .comma:last-child {
     display: none;
 }
+.overlay {
+    display: none;
+}

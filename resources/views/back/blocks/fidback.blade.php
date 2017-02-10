@@ -1,13 +1,13 @@
 @extends('back.layout')
 @section('content')
     <div class="block ">
-        <div class="field-wrap ">
+        {{--<div class="field-wrap ">
             <label class="input-file">
                 Email получателя писем
             </label>
             <input type="text" data-field-type="string" data-field-name="mail_rec" data-block="fidback"
                    class="input block_field" value="{{$fidback->mail_rec_field}}" placeholder="Строка">
-        </div>
+        </div>--}}
         <div class="field-wrap ">
             <label class="input-file">
                 Название сайта
