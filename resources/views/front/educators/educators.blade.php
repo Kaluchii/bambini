@@ -32,9 +32,9 @@
                                 @foreach($edu->staff_certs_group as $item)
                                     <a href="/images/{{$edu->face_image->primary_link}}"></a>
                                 @endforeach
-                                    <a href="/img/1gg.jpg"></a>
-                                    <a href="/img/2gg.jpg"></a>
-                                    <a href="/img/3gg.jpg"></a>
+                                    <a href="/img/1gg.jpg">Open image 1</a>
+                                    <a href="/img/2gg.jpg">Open image 2</a>
+                                    <a href="/img/3gg.jpg">Open image 3</a>
                             </div>
                         </div>
                         <a href="/img/1gg.jpg" class="sert-img call_certs"><img src="/img/sert-place.png" alt=""></a>
