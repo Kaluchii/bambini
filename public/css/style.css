@@ -928,7 +928,8 @@ section.content .teacher-block .col-1-2:last-child {
 }
 section.content .teacher-block .row-1-2 .serts-link {
     display: inline-block;
-    /* height: 0; */
+    height: 0;
+    font-size: 0;
 }
 section.content .teacher-block .row-1-2 .sert-img {
     display: inline-block;
