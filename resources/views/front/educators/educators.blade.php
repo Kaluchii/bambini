@@ -26,20 +26,29 @@
                     </div>
                 </div>
                 <div class="row-1-2">
-                    <div class="col-1-2">
+                    <div class="col-1-2 gallery-link">
+                        <?php $i = 0 ?>
+                        @foreach($edu->staff_certs_group as $item)
+                            @if($i < 1)
+                                <a class="serts-link" href="/images/{{$item->cert_image->primary_link}}">
+                                    <div class="sert-img"><img src="/img/sert-place.png" alt=""></div>
+                                    {{--<div class="sert-img"><img src="/images/{{$edu->cert_preview_image->primary_link}}" alt=""></div>--}}
+                                    <div class="sert-row"><span class="serts">Сертификаты и дипломы</span></div>
+                                </a>
+                                <?php $i++ ?>
+                            @endif
+                        @endforeach
                         <div class="overlay">
                             <div class="certs_gallery">
+                                <?php $i = 0 ?>
                                 @foreach($edu->staff_certs_group as $item)
-                                    <a href="/images/{{$edu->face_image->primary_link}}"></a>
+                                    @if($i > 0)
+                                        <a href="/images/{{$item->cert_image->primary_link}}"></a>
+                                    @endif
+                                    <?php $i++ ?>
                                 @endforeach
-                                    <a href="/img/1gg.jpg">Open image 1</a>
-                                    <a href="/img/2gg.jpg">Open image 2</a>
-                                    <a href="/img/3gg.jpg">Open image 3</a>
                             </div>
                         </div>
-                        <a href="/img/1gg.jpg" class="sert-img call_certs"><img src="/img/sert-place.png" alt=""></a>
-                        {{--<a href="" class="sert-img"><img src="/images/{{$edu->cert_preview_image->primary_link}}" alt=""></a>--}}
-                        <div class="sert-row"><a href="/img/1gg.jpg" class="serts call_certs">Сертификаты и дипломы</a></div>
                     </div>
                     <div class="col-1-2">
                         @foreach($upgrade->upgrade_programs_group as $program)

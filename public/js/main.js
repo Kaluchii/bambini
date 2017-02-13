@@ -33,32 +33,19 @@ $(document).ready(function(){
         type:'inline',
         midClick: true
     });
+    // Магия без которой при первом клике галлерея не работает
+    $('.call_certs').click();
+    $('.mfp-close').click();
 
-    $('.call_certs').on('click', function () {
-        // инициализация самой галлереи
-        $('.call_certs').magnificPopup({
-            callbacks: {},
+    $('.gallery-link').each(function() { // the containers for all your galleries
+        $(this).magnificPopup({
+            delegate: 'a', // the selector for gallery item
             type: 'image',
             gallery: {
                 enabled: true,
                 navigateByImgClick: true,
                 preload: [0, 1],
                 tCounter: '%curr% из %total%'
-            }
-        });
-        // возврат false что бы не было перехода по ссылке
-        return false;
-    });
-    // Магия без которой при первом клике галлерея не работает
-    $('.call_certs').click();
-    $('.mfp-close').click();
-
-    $('.certs_gallery').each(function() { // the containers for all your galleries
-        $(this).magnificPopup({
-            delegate: 'a', // the selector for gallery item
-            type: 'image',
-            gallery: {
-                enabled:true
             }
         });
     });

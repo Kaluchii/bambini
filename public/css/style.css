@@ -920,18 +920,22 @@ section.content .teacher-block .row-1-2:last-child {
     margin-top: 25px;
 }
 section.content .teacher-block .col-1-2:first-child {
-    padding-right: 50px;
+    /* padding-right: 50px; */
     /* padding-left: 15px; */
 }
 section.content .teacher-block .col-1-2:last-child {
     width: 430px;
+}
+section.content .teacher-block .row-1-2 .serts-link {
+    display: inline-block;
+    /* height: 0; */
 }
 section.content .teacher-block .row-1-2 .sert-img {
     display: inline-block;
     border: 1px solid #999999;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
-section.content .teacher-block .row-1-2 .sert-img:hover {
+section.content .teacher-block .row-1-2 .serts-link:hover .sert-img {
     border: 1px solid #c1e0b2;
     box-shadow: 0 5px 10px rgba(51, 153, 0, 0.25);
 }
@@ -940,7 +944,7 @@ section.content .teacher-block .row-1-2 .sert-row {
     vertical-align: top;
     margin: 25px;
     line-height: 1.5;
-    width: 105px;
+    width: 115px;
 }
 section.content .teacher-block .row-1-2 .sert-row .serts {
     font-size: 16px;
@@ -956,7 +960,7 @@ section.content .teacher-block .row-1-2 .sert-row .serts {
     background-repeat: repeat-x;
     font-weight: bold;
 }
-section.content .teacher-block .row-1-2 .sert-row .serts:hover {
+section.content .teacher-block .row-1-2 .serts-link:hover .sert-row .serts {
     color: #339900;
     background: -webkit-gradient(to linear, 0 0, 90% 0, from(#c1e0b2), to(#c1e0b2));
     background: -webkit-linear-gradient(to left, #c1e0b2, #c1e0b2 90%);
