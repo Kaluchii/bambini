@@ -22,7 +22,7 @@
                         <p class="prof">{{$edu->dolzhnost_field}}</p>
                         <div class="text-block">{!! $edu->preview_descr_field !!}</div>
                         <div class="text-block more-text">{!! $edu->descr_field !!}</div>
-                        <div class="more"><a class="expand">Подробнее</a></div>
+                        @if($edu->descr_field != '')<div class="more"><a class="expand">Подробнее</a></div>@endif
                     </div>
                 </div>
                 <div class="row-1-2">
