@@ -31,7 +31,7 @@
                         @foreach($edu->staff_certs_group as $item)
                             @if($i < 1)
                                 <a class="serts-link" href="/images/{{$item->cert_image->primary_link}}">
-                                    <div class="sert-img"><img src="/img/sert-place.png" alt=""></div>
+                                    <div class="sert-img"><img src="/images/{{$edu->cert_preview_image->primary_link}}" alt=""></div>
                                     {{--<div class="sert-img"><img src="/images/{{$edu->cert_preview_image->primary_link}}" alt=""></div>--}}
                                     <div class="sert-row"><span class="serts">Сертификаты и дипломы</span></div>
                                 </a>
