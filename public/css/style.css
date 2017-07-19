@@ -164,7 +164,7 @@ nav.main-menu ul.menu li.menu-item a:hover {
 nav.main-menu ul.menu li.menu-item.active {
     background: #8fc644;
     border-radius: 16px;
-    padding: 5px 12px 3px;
+    padding: 5px 12px;
     margin: 0 13px;
 }
 nav.main-menu ul.menu li.menu-item.active a {
@@ -1336,20 +1336,8 @@ section.content .text-block a img {
     color: #333;
     font-weight: bold;
 }
-
-.schedule .table-head .delimiter {
-    font-size: inherit;
-    padding: 0 5px;
-}
-.schedule .table-body .delimiter {
+.schedule .hour {
     color: #666;
-    padding: 0 5px;
-}
-.schedule .hour, .comma {
-    color: #666;
-}
-.comma:last-child {
-    display: none;
 }
 .overlay {
     display: none;

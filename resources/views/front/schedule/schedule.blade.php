@@ -18,7 +18,7 @@
                         <div class="col-1-2"><a href="/{{$program_item->slug_field}}" class="link">{{$program_item->program_name_field}}</a></div>
                         <div class="col-1-2">
                             @foreach($program_item->program_schedule_group as $schedule_item)
-                                <span class="day">{{$schedule_item->day_field}}</span> @if($program_item->program_schedule_group->count() < 2)<span class="delimiter"> • </span>@endif<span class="hour">{{$schedule_item->hour_field}}</span><span class="comma">, </span>
+                                <p class="schedule_date-row"><span class="day">{{$schedule_item->day_field}} </span><span class="hour">{{$schedule_item->hour_field}}</span></p>
                             @endforeach
                         </div>
                     </li>
@@ -29,7 +29,7 @@
                             <div class="col-1-2"><a href="/{{$target_program_item->slug_field}}" class="link">{{$target_program_item->program_name_field}}</a></div>
                             <div class="col-1-2">
                                 @foreach($target_program_item->target_program_schedule_group as $target_schedule_item)
-                                    <span class="day">{{$target_schedule_item->day_field}}</span> @if($target_program_item->target_program_schedule_group->count() < 2)<span class="delimiter"> • </span>@endif<span class="hour">{{$target_schedule_item->hour_field}}</span><span class="comma">, </span>
+                                    <p class="schedule_date-row"><span class="day">{{$target_schedule_item->day_field}} </span><span class="hour">{{$target_schedule_item->hour_field}}</span></p>
                                 @endforeach
                             </div>
                         </li>
